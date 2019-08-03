@@ -27,10 +27,66 @@ html, body {
     font-family: $family-sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "New York", "Arial", sans-serif;
+}
+
+.subtitle {
+    font-size: 1.25em;
+    color: #3b3b3b;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px #CBCBCB;
+    border-radius: 5px;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.button.rs-btn {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+    box-shadow: 0px 2px 4px #CBCBCB;
+    border-radius: 3px;
+    border: none;
+    height: 100%;
+    padding: 12px 0;
+    text-align: left;
+
+    img {
+        width: 64px;
+        margin-right: 24px;
+    }
+
+    .button-text {
+        line-height: 1.25;
+        width: 128px;
+    }
+
+    small {
+        color: $grey;
+    }
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+// Custom
+.is-new-york {
+    font-family: "New York", "Arial", sans-serif;
+}
+
 body.auth-page {
     background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%);
 }
 
 .auth-page .header {
     padding: 56px 0;
+}
+
+.card-spacing {
+    padding: 64px 0;
 }

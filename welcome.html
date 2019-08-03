@@ -13,35 +13,61 @@
     </section>
     <div class="container">
       <div class="columns">
-        <div class="column is-8-desktop is-offset-2-desktop">
+        <div class="column is-6-desktop is-offset-3-desktop has-text-centered">
           <div class="content">
-            <h3>What's included</h3>
-            <p>
-              The <code>npm</code> dependencies included in <code>package.json</code> are:
+            <h1 class="title is-spaced is-size-2">Welcome!</h1>
+            <p class="subtitle is-size-4">
+              Happy to see you here! 🥰 Help us provide you a better  experience by choosing the right options below. 😊
             </p>
-            <ul>
-              <li>
-                <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
-              </li>
-              <li>
-                <code><a href="https://github.com/sass/node-sass">node-sass</a></code> to compile your own Sass file
-              </li>
-              <li>
-                <code><a href="https://github.com/postcss/postcss-cli">postcss-cli</a></code> and <code><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></code> to add support for older browsers
-              </li>
-              <li>
-                <code><a href="https://babeljs.io/docs/usage/cli/">babel-cli</a></code>,
-                <code><a href="https://github.com/babel/babel-preset-env">babel-preset-env</a></code>
-                and
-                <code><a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a></code>
-                for compiling ES6 JavaScript files
-              </li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
-
+    <div class="container card-spacing">
+      <div class="columns">
+        <div class="column is-6-desktop is-offset-3-desktop">
+          <div class="card">
+            <div class="card-content">
+              <p class="label">Please choose one:</p>
+              <div class="columns">
+                <div class="column is-6">
+                    <button class="button is-large rs-btn is-fullwidth"> 
+                      <img src="assets/passenger-icon.svg" />
+                      <p class="button-text">
+                        <small>I'm a</small> <br />
+                        <span class="is-size-5 is-new-york"> Passenger </span>
+                      </p>
+                    </button>
+                </div>
+                <div class="column is-6">
+                    <button class="button is-large rs-btn is-fullwidth"> 
+                      <img src="assets/rider-icon.svg" />
+                      <p class="button-text">
+                        <small>I'm a</small> <br />
+                        <span class="is-size-5 is-new-york"> Rider </span>
+                      </p>
+                    </button>
+                </div>
+              </div>
+              <p class="label">Which language do you prefer?</p>
+              <div class="columns">
+                <div class="column is-6">
+                  <button class="button is-large rs-btn is-fullwidth"> 
+                    <p class="is-size-5 has-text-weight-bold is-new-york"><span>English</span></p>
+                  </button>
+                </div>
+                <div class="column is-6">
+                  <button class="button is-large rs-btn is-fullwidth"> 
+                    <p class="is-size-5 has-text-weight-bold is-new-york"><span>Tagalog</span></p>
+                  </button>
+                </div>
+              </div>
+              <button class="button is-large is-fullwidth is-link" disabled>Enter Website</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>
