@@ -6957,6 +6957,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+html {
+  background: transparent; }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -6969,6 +6972,12 @@ h4,
 h5,
 h6 {
   font-family: "New York", "Arial", sans-serif; }
+
+body {
+  background: #FFE44E; }
+
+footer {
+  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
 
 .subtitle {
   font-size: 1.25em;
@@ -6984,6 +6993,32 @@ h6 {
   .card-content .card-title {
     padding-bottom: 1.5rem; }
 
+.button.is-link {
+  background: linear-gradient(0deg, #1560FF 0%, #6A99FF 100%);
+  box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
+  border-radius: 4px;
+  border: none; }
+
+.navbar {
+  background: transparent;
+  padding: 24px 0 60px; }
+
+.container.is-fluid {
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.is-new-york {
+  font-family: "New York", "Arial", sans-serif; }
+
+.card-spacing {
+  margin-top: 48px; }
+
+.auth-page {
+  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
+
+.auth-page .header {
+  padding: 56px 0; }
+
 .pre-footer {
   padding: 48px 0; }
   .pre-footer .recaptcha {
@@ -6992,12 +7027,6 @@ h6 {
     font-size: 0.85rem; }
     .pre-footer .recaptcha a {
       color: #7a7a7a; }
-
-.button.is-link {
-  background: linear-gradient(0deg, #1560FF 0%, #6A99FF 100%);
-  box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
-  border-radius: 4px;
-  border: none; }
 
 .button.rs-btn {
   background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
@@ -7018,14 +7047,58 @@ h6 {
   .button.rs-btn span {
     text-transform: uppercase; }
 
-.is-new-york {
-  font-family: "New York", "Arial", sans-serif; }
+.hero {
+  padding: 80px 0 160px; }
 
-.auth-page {
-  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
+.regular-section {
+  padding: 80px 0;
+  background: #FFF6CB; }
+  .regular-section.stripe {
+    background: repeating-linear-gradient(-55deg, #000, #000 30px, #FFE44E 30px, #FFE44E 60px); }
 
-.auth-page .header {
-  padding: 56px 0; }
+.stripe {
+  padding: 64px; }
+  .stripe .card {
+    padding: 64px 32px;
+    box-shadow: none; }
 
-.card-spacing {
-  margin-top: 48px; }
+.intro-items {
+  padding: 48px 0; }
+  .intro-items .picture img {
+    width: 100%;
+    max-width: 96px;
+    padding-bottom: 24px; }
+
+.why-become-a-rider {
+  background-image: url(../assets/waves-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 640px; }
+
+.what-were-building {
+  padding: 120px 0; }
+  .what-were-building > .title {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 48px; }
+  .what-were-building .screenshots .picture {
+    padding: 24px 0;
+    max-width: 280px; }
+  .what-were-building .screenshots .title {
+    padding: 24px 0; }
+
+.launching-timer .timer {
+  padding: 32px 0; }
+
+.launching-timer .subtitle {
+  color: #7a7a7a;
+  text-transform: uppercase; }
+
+.sign-up-cta .title {
+  padding: 24px 0; }
+
+.sign-up-cta .faq {
+  padding: 80px 0; }
+  .sign-up-cta .faq .title {
+    max-width: 720px;
+    margin: 0 auto; }
