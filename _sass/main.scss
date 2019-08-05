@@ -166,6 +166,10 @@ footer {
     }
 }
 
+.yellowed {
+    background: $yellow;
+}
+
 .intro-items {
     padding: 48px 0;
     .picture {
@@ -177,7 +181,7 @@ footer {
     }    
 }
 
-.why-become-a-rider {
+.why-become-a-rider, {
     background-image: url(../assets/waves-pattern.svg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -224,5 +228,85 @@ footer {
             max-width: 720px;
             margin: 0 auto;
         }
+    }
+}
+
+.early-access {
+    .terms {
+        color: $grey;
+        padding: 24px 0;
+        font-size: 0.85rem;
+        a {
+            color: $grey;
+            font-weight: 700;
+        }
+    }
+    
+    .gold-checked {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+    } 
+}
+
+
+// Link and Icons
+.right-arrow {
+    vertical-align: middle;
+    padding-left: 16px;
+}
+
+
+// Passenger
+.how-it-works {
+    padding: 120px 0;
+    > .title {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 48px;
+    }
+    .screenshots {
+        .picture {
+            padding: 24px 0;
+        }
+        .title {
+            padding: 24px 0;
+        }
+    }
+}
+
+.have-more-time {
+    .card {
+        padding-bottom: 0;
+    }
+
+    .column:last-child {
+        padding-bottom: 0;
+    }
+
+    img {
+        max-width: 200px;
+    }
+}
+
+.people-trust {
+    padding: 120px 0;
+    background-image: url(../assets/waves-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 400px;
+}
+
+.were-building-better {
+    padding: 120px 0;
+    > .title {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 120px;
+    }
+
+    .columns {
+        padding: 64px 0;
+        padding-left: 64px;
     }
 }

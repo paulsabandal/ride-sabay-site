@@ -7062,6 +7062,9 @@ footer {
     padding: 64px 32px;
     box-shadow: none; }
 
+.yellowed {
+  background: #FFE44E; }
+
 .intro-items {
   padding: 48px 0; }
   .intro-items .picture img {
@@ -7102,3 +7105,57 @@ footer {
   .sign-up-cta .faq .title {
     max-width: 720px;
     margin: 0 auto; }
+
+.early-access .terms {
+  color: #7a7a7a;
+  padding: 24px 0;
+  font-size: 0.85rem; }
+  .early-access .terms a {
+    color: #7a7a7a;
+    font-weight: 700; }
+
+.early-access .gold-checked {
+  display: flex;
+  align-items: center;
+  font-size: 1rem; }
+
+.right-arrow {
+  vertical-align: middle;
+  padding-left: 16px; }
+
+.how-it-works {
+  padding: 120px 0; }
+  .how-it-works > .title {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 48px; }
+  .how-it-works .screenshots .picture {
+    padding: 24px 0; }
+  .how-it-works .screenshots .title {
+    padding: 24px 0; }
+
+.have-more-time .card {
+  padding-bottom: 0; }
+
+.have-more-time .column:last-child {
+  padding-bottom: 0; }
+
+.have-more-time img {
+  max-width: 200px; }
+
+.people-trust {
+  padding: 120px 0;
+  background-image: url(../assets/waves-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 400px; }
+
+.were-building-better {
+  padding: 120px 0; }
+  .were-building-better > .title {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 120px; }
+  .were-building-better .columns {
+    padding: 64px 0;
+    padding-left: 64px; }
