@@ -13,13 +13,14 @@
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 $grey-darker: #181818;
-$blue: #06bcef;
+$blue: #1560FF;
 $pink: #ff8080;
 $pink-invert: #fff;
 $yellow: #FFE44E;
 $yellow-pale: #FFF6CB;
 $yellow-gradient: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%);
-
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
 
 $family-sans-serif: "SF Rounded", "Arial", sans-serif;
 
@@ -82,6 +83,29 @@ footer {
 .container.is-fluid {
     max-width: 1120px;
     margin: 0 auto;
+}
+
+.tabs {
+    background: $white;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 4px #CBCBCB;
+    border-radius: 5px;
+    padding: 24px 12px;
+
+    ul, a {
+        border: none;
+    }
+
+    li.is-active a {
+        font-weight: 700;
+        color: $blue;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+        box-shadow: 0px 2px 4px #CBCBCB;
+        border-radius: 3px;
+        border: none;
+    }
 }
 
 // General
@@ -421,4 +445,84 @@ footer {
         margin: 0 auto;
         padding: 24px 0;
     }
+}
+
+/* Accordion styles */
+.accordion {
+    overflow: hidden;
+}
+
+.accordion-item {
+    width: 100%;
+    color: $black;
+    overflow: hidden;
+    padding: 4px;
+
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #fff;
+      font-weight: bold;
+      box-shadow: 0px 2px 4px #CBCBCB;
+      margin: 8px 0;
+
+      cursor: pointer;
+      /* Icon */
+      &:hover {
+          background: #eee;
+      }
+      &::after {
+          content: "\276F";
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          transition: all .35s;
+      }
+    }
+
+    &-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: $midnight;
+      background: white;
+      transition: all .35s;
+      border-radius: 3px;
+      box-shadow: 0px 2px 4px #CBCBCB;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $midnight;
+    cursor: pointer;
+
+      &:hover {
+          background: darken($midnight, 10%);
+      }
+    }
+}
+
+.ticker {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+// :checked
+.ticker:checked {
+  + .accordion-item-label {
+    background: $white;
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .accordion-item-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
 }

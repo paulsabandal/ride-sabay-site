@@ -7007,6 +7007,24 @@ footer {
   max-width: 1120px;
   margin: 0 auto; }
 
+.tabs {
+  background: white;
+  background: #F9F9F9;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  box-shadow: inset 0px 2px 4px #CBCBCB;
+  border-radius: 5px;
+  padding: 24px 12px; }
+  .tabs ul, .tabs a {
+    border: none; }
+  .tabs li.is-active a {
+    font-weight: 700;
+    color: #1560FF;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+    box-shadow: 0px 2px 4px #CBCBCB;
+    border-radius: 3px;
+    border: none; }
+
 .is-new-york {
   font-family: "New York", "Arial", sans-serif; }
 
@@ -7230,3 +7248,64 @@ footer {
   max-width: 200px;
   margin: 0 auto;
   padding: 24px 0; }
+
+/* Accordion styles */
+.accordion {
+  overflow: hidden; }
+
+.accordion-item {
+  width: 100%;
+  color: #0a0a0a;
+  overflow: hidden;
+  padding: 4px; }
+  .accordion-item-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px #CBCBCB;
+    margin: 8px 0;
+    cursor: pointer;
+    /* Icon */ }
+    .accordion-item-label:hover {
+      background: #eee; }
+    .accordion-item-label::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s; }
+  .accordion-item-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all .35s;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px #CBCBCB;
+    width: 95%;
+    margin: 0 auto; }
+  .accordion-item-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer; }
+    .accordion-item-close:hover {
+      background: #1a252f; }
+
+.ticker {
+  position: absolute;
+  opacity: 0;
+  z-index: -1; }
+
+.ticker:checked + .accordion-item-label {
+  background: white; }
+  .ticker:checked + .accordion-item-label::after {
+    transform: rotate(90deg); }
+
+.ticker:checked ~ .accordion-item-content {
+  max-height: 100vh;
+  padding: 1em; }
