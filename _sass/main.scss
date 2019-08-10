@@ -97,6 +97,9 @@ footer {
     ul, a {
         border: none;
     }
+    li a {
+        padding: 16px 24px;
+    }
 
     li.is-active a {
         font-weight: 700;
@@ -191,7 +194,11 @@ footer {
 }
 
 .yellowed {
-    background: $yellow;
+  background: $yellow;
+}
+
+.yellowed-gradient {
+  background: $yellow-gradient
 }
 
 .intro-items {
@@ -214,6 +221,10 @@ footer {
 
 .what-were-building {
     padding: 120px 0;
+    background-image: url(../assets/3-waves-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     > .title {
         max-width: 800px;
         margin: 0 auto;
@@ -437,8 +448,6 @@ footer {
 }
 
 // Range Slider
-
-
 .registration-success {
     img {
         max-width: 200px;
@@ -524,5 +533,167 @@ footer {
   ~ .accordion-item-content {
     max-height: 100vh;
     padding: 1em;
+  }
+}
+
+// Range slider for Driver
+$h: 1em;
+$w: 100%;
+
+@mixin thumb() {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: (solid .35em transparent) null (solid .25em transparent);
+  width: $h + .3em;
+  height: $h + .3em;
+  background-clip: content-box;
+  position: relative;
+  z-index: 10;
+  margin-top: -.1em;
+  margin-left: .05em;
+  background: linear-gradient(180deg, #FFED8E 0%, #D1BB40 100%);
+  border: 1px solid #181818;
+  box-shadow: 0px 2px 4px #CBCBCB;
+}
+
+@mixin trackN($n) {
+  input[type='range'].n.n#{$n}:before {
+    $bgW: $w / ($n - 1);
+    background-size: (
+      $bgW $h, 
+      $w .25em
+    );
+  }
+}
+
+.daily-range {
+  padding: 40px 16px;
+  .range-title {
+    padding-left: 16px;
+  }
+}
+
+.range-container {
+  padding: 16px 0;
+}
+
+.range {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.range-price {
+  padding: 16px;
+}
+
+.range-results {
+  padding: 24px;
+
+  .stroked {
+    text-decoration: line-through;
+    color: $grey;
+  }
+}
+
+ul.range-labels {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  li {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.is-strong {
+  font-weight: 700;
+}
+
+input[type='range'].n {
+  display: block;
+  margin: 1em auto 0.5em;
+  padding: 0;
+  background: transparent;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #E9E9E9;
+    position: absolute;
+    right: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0.8em;
+    height: 1em;
+    background: radial-gradient(circle at 0.5em 50%, #E9E9E9 0.3125em, #E9E9E9 0.3125em, #E9E9E9 0.5em, transparent 0.5em), linear-gradient(90deg, transparent 0, #E9E9E9 0) repeat-x 0 50%;
+    box-sizing: border-box;
+  }
+
+  &::-ms-track { 
+    border: none;
+    color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    @include thumb();
+  }
+
+  &::-moz-range-thumb {
+    @include thumb();
+  }
+
+  &::-ms-thumb {
+    @include thumb();
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, input[type='range'].n::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+@for $n from 2 through 10 {
+  @include trackN($n);
+}
+
+.check-benefits {
+  font-size: 12px;
+  padding: 0 24px;
+  img {
+    vertical-align: middle;
+  }
+}
+
+
+// tag
+
+.tag:not(body) {
+  border-radius: 16.5px;
+  padding: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  &.is-success {
+    background-color: #EDFFCE;
+    border: 1px solid #3C4629;
+    color: #3C4629;
   }
 }

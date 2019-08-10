@@ -54,7 +54,7 @@
     <section class="hero is-large">
       <div class="container is-fluid">
         <div class="columns">
-          <div class="column is-6">
+          <div class="column is-5">
             <div class="content">
               <h1 class="title is-spaced is-size-1">Earn money with your motorcycle.</h1>
               <p class="subtitle is-size-3">
@@ -65,14 +65,63 @@
               </a>
             </div>
           </div>
-          <div class="column  is-offset-1-desktop">
+          <div class="column is-offset-1-desktop">
             <div class="card">
-              <div class="card-content">
-                <h3 class="is-size-5">See how much you can earn daily <span class="tag is-danger">In Progress</span>
+              <div class="daily-range">
+                <h3 class="range-title is-size-4">See how much you can earn daily
                 </h3>
-                <img src="assets/progress.svg" />
-                <div class="range" data-reactid=".0.1">
-                  <input class="range-slide" name="range" type="range" min="0" max="5" value="1" step="1" ></div>
+
+                <div class="range-container">
+                  <div class="range">
+                    <input type='range' min='1' max='6' value='1' id="earn-range" step='1' class="n n6"/>
+                  </div>
+                    
+                  <ul class="range-labels">
+                    <li>6 <br />trips</li>
+                    <li>9 <br />trips</li>
+                    <li>12 <br />trips</li>
+                    <li>15 <br />trips</li>
+                    <li>18 <br />trips</li>
+                    <li>21 <br />trips</li>
+                  </ul>
+                </div>
+
+                <div class="range-results">
+                  <div class="columns">
+                    <div class="column">
+                      <label><strong>Puede Kitain</strong></label>
+                      <div class="range-price is-new-york yellowed-gradient">
+                        <span class="is-size-5 stroked">₱1,600</span>
+                        <span class="is-size-3">₱1,800</span>
+                      </div>
+                    </div>
+                    <div class="column has-text-centered">
+                      <label id="test"></label>
+                      <label class="is-size-5"><strong>Earn P200</strong></label> <br />
+                      <span class="tag is-success">PRE- LAUNCH INCENTIVE!</span> <br />
+                      <span><small>Sign up now to get more benefits 
+                          and incentives!</small></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns check-benefits is-gapless">
+                  <div class="column is-one-third"">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
+                    </div>
+                  </div>
+                  <div class="column is-one-third"">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Incentive program</strong>
+                    </div>
+                  </div>
+                  <div class="column is-one-third"">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Great community</strong>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -311,5 +360,19 @@
     </footer>
 
     <script type="text/javascript" src="lib/main.js"></script>
+    <script type="text/javascript">
+      var slider = document.getElementById("earn-range");
+      slider.onchange = function(event) {
+        var output = document.getElementById("test");
+        var item = document.querySelector('.range-labels li:nth-child(' + slider.value +')');
+        
+        document.querySelectorAll('.range-labels li.is-strong').forEach(function(list) {
+          list.classList.remove('is-strong');
+        })
+
+        item.classList.add("is-strong");
+
+      }
+    </script>
   </body>
 </html>
