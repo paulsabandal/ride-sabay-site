@@ -91,8 +91,8 @@
                     <div class="column">
                       <label><strong>Puede Kitain</strong></label>
                       <div class="range-price is-new-york yellowed-gradient">
-                        <span class="is-size-5 stroked">₱1,600</span>
-                        <span class="is-size-3">₱1,800</span>
+                        <!-- <span class="is-size-5 stroked">₱1,600</span> -->
+                        <span class="is-size-3" id="range-earnings">₱0.00</span>
                       </div>
                     </div>
                     <div class="column has-text-centered">
@@ -363,7 +363,7 @@
     <script type="text/javascript">
       var slider = document.getElementById("earn-range");
       slider.onchange = function(event) {
-        var output = document.getElementById("test");
+        var earning = document.getElementById("range-earnings");
         var item = document.querySelector('.range-labels li:nth-child(' + slider.value +')');
         
         document.querySelectorAll('.range-labels li.is-strong').forEach(function(list) {
@@ -371,6 +371,20 @@
         })
 
         item.classList.add("is-strong");
+
+        if (slider.value == 1) {
+          earning.innerText = "₱264.00";
+        } else if (slider.value == 2) {
+          earning.innerText = "₱528.00";
+        } else if (slider.value == 3) {
+          earning.innerText = "₱792.00";
+        } else if (slider.value == 4) {
+          earning.innerText = "₱1,056.00";
+        } else if (slider.value == 5) {
+          earning.innerText = "₱1,320.00";
+        } else if (slider.value == 6) {
+          earning.innerText = "₱1,804.00";
+        }
 
       }
     </script>
