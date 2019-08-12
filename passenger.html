@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My first Bulma website</title>
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
@@ -54,42 +55,94 @@
     <section class="hero is-large">
       <div class="container is-fluid">
         <div class="columns">
-          <div class="column is-6">
+          <div class="column is-5">
             <div class="content">
-              <h1 class="title is-spaced is-size-1">Move through traffic and do more of what you love.</h1>
-              <p class="subtitle is-size-3">
+              <span class="tag is-danger">COMING SOON!</span>
+              <h1 class="title is-spaced is-size-2">Move through traffic and do more of what you love.</h1>
+              <p class="subtitle is-size-4">
                 <strong>RIDE Sabay</strong> is the newest motorcycle ride-sharing app in town. We make moving easy. 😎
               </p>
               <a class="button is-large is-link">
                 <strong>Sign up now</strong>
               </a>
+              <img src="assets/product-hunt.svg" class="ph-badge" />
             </div>
           </div>
-          <div class="column check-our-rates is-offset-1-desktop">
+          <div class="column is-offset-1-desktop">
             <div class="card">
-              <div class="card-content">
-                <h3 class="is-size-5">Check our rates</h3>
-                <div class="columns">
-                  <div class="column">
-                    <div class="field">
-                      <label class="label">From</label>
-                      <div class="control">
-                          <input class="input" type="text" placeholder="">
+              <div class="daily-range">
+                <div class="from-to-rates">
+                  <h3 class="is-size-5">Check our rates</h3>
+                  <div class="columns">
+                    <div class="column">
+                      <div class="field">
+                        <label class="label">From</label>
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="">
+                            <span class="icon is-small is-right">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div class="field">
+                        <label class="label">To</label>
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="">
+                            <span class="icon is-small is-right">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="field">
-                      <label class="label">To</label>
-                      <div class="control">
-                          <input class="input" type="text" placeholder="">
+                </div>
+                <div class="range-results">
+                  <div class="columns">
+                    <div class="column">
+                      <label><strong>Price</strong></label>
+                      <div class="range-price is-new-york yellowed-gradient">
+                        <span class="is-size-5 stroked">₱120</span>
+                        <span class="is-size-3" id="range-earnings">₱80.00</span>
                       </div>
+                    </div>
+                    <div class="column has-text-centered">
+                      <label id="test"></label>
+                      <label class="is-size-5"><strong>Save P50.00</strong></label> <br />
+                      <span class="tag is-success">PRE- LAUNCH INCENTIVE!</span> <br />
+                      <span><small>Sign up now to get more benefits 
+                          and rewards!</small></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns check-benefits is-gapless">
+                  <div class="column">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>FREE rides</strong>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Referral program</strong>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Special rewards</strong>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -170,7 +223,7 @@
     <section class="how-it-works regular-section yellowed">
       <h2 class="is-size-3 title has-text-centered">How RIDESabay works</h2>
       <div class="container is-fluid">
-        <div class="columns is-variable has-text-centered is-6 screenshots">
+        <div class="columns has-text-centered screenshots">
           <div class="column is-one-third">
             <div class="picture"><img src="assets/passenger/phone-2.png" /></div>
             <p class="title is-size-4">Enter pick up and drop off location in the app</p>

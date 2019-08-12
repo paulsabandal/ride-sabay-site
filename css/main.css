@@ -6979,6 +6979,15 @@ body {
 footer {
   background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
 
+.navbar-item.has-dropdown .navbar-dropdown {
+  display: none; }
+
+.navbar-item.has-dropdown.is-active .navbar-dropdown {
+  display: block; }
+
+.content h1:not(:first-child) {
+  margin-top: .5em; }
+
 .subtitle {
   font-size: 1.25em;
   color: #3b3b3b; }
@@ -6993,11 +7002,19 @@ footer {
   .card-content .card-title {
     padding-bottom: 1.5rem; }
 
+section {
+  padding: 0 24px; }
+
 .button.is-link {
   background: linear-gradient(0deg, #1560FF 0%, #6A99FF 100%);
   box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
   border-radius: 4px;
-  border: none; }
+  border: none;
+  font-weight: 700; }
+  .button.is-link.fixed-size {
+    font-size: 16px;
+    padding: 8px;
+    height: 48px; }
 
 .navbar {
   background: transparent;
@@ -7034,7 +7051,11 @@ footer {
   margin-top: 48px; }
 
 .auth-page {
-  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
+  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%);
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .auth-page .title, .auth-page .subtitle {
+      text-align: left !important; } }
 
 .auth-page .header {
   padding: 56px 0; }
@@ -7068,16 +7089,23 @@ footer {
     text-transform: uppercase; }
 
 .hero {
-  padding: 80px 0 160px; }
+  padding: 40px 24px 160px; }
 
 .regular-section {
-  padding: 80px 0;
+  padding: 80px 24px;
   background: #FFF6CB; }
   .regular-section.stripe {
     background: repeating-linear-gradient(-55deg, #000, #000 30px, #FFE44E 30px, #FFE44E 60px); }
 
+.padded-section {
+  padding-left: 24px;
+  padding-right: 24px; }
+
 .stripe {
   padding: 64px; }
+  @media screen and (max-width: 768px) {
+    .stripe {
+      padding: 24px !important; } }
   .stripe .card {
     padding: 64px 32px;
     box-shadow: none; }
@@ -7087,6 +7115,14 @@ footer {
 
 .yellowed-gradient {
   background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
+
+.ph-badge {
+  padding-left: 16px; }
+  @media screen and (max-width: 768px) {
+    .ph-badge {
+      float: left;
+      padding-left: 0;
+      padding-bottom: 16px; } }
 
 .intro-items {
   padding: 48px 0; }
@@ -7320,6 +7356,7 @@ footer {
   padding: 1em; }
 
 .daily-range {
+  margin-top: 32px;
   padding: 40px 16px; }
   .daily-range .range-title {
     padding-left: 16px; }
@@ -7351,6 +7388,11 @@ ul.range-labels {
     justify-content: center;
     align-items: center; }
 
+.from-to-rates {
+  padding: 0 24px; }
+  .from-to-rates .columns {
+    margin-top: 8px; }
+
 .is-strong {
   font-weight: 700; }
 
@@ -7359,7 +7401,7 @@ input[type='range'].n {
   margin: 1em auto 0.5em;
   padding: 0;
   background: transparent;
-  font-size: 1em;
+  font-size: 1.25em;
   cursor: pointer;
   width: 100%;
   position: relative; }
@@ -7476,3 +7518,8 @@ input[type='range'].n.n10:before {
     background-color: #EDFFCE;
     border: 1px solid #3C4629;
     color: #3C4629; }
+  .tag:not(body).is-danger {
+    background: #FFB1B1;
+    border: 1px solid #461E1E;
+    color: #461E1E;
+    font-size: 12px; }
