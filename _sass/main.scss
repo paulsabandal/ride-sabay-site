@@ -131,7 +131,7 @@ section {
 
   &.is-large {
     font-size: 18px;
-    height: 64px;
+    height: 60px;
   }
 }
 
@@ -285,6 +285,7 @@ section {
 
 .ph-badge {
   padding-left: 16px;
+  height: 62px;
   @include until($tablet) {
     float: left;
     padding-left: 0;

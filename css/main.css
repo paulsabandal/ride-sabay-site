@@ -7036,7 +7036,7 @@ section {
     padding-left: 1.25em; }
   .button.is-large {
     font-size: 18px;
-    height: 64px; }
+    height: 60px; }
 
 .navbar {
   background: transparent;
@@ -7142,7 +7142,8 @@ section {
   background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
 
 .ph-badge {
-  padding-left: 16px; }
+  padding-left: 16px;
+  height: 62px; }
   @media screen and (max-width: 768px) {
     .ph-badge {
       float: left;
