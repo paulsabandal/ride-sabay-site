@@ -6973,11 +6973,19 @@ h5,
 h6 {
   font-family: "New York", "Arial", sans-serif; }
 
+a {
+  color: #1560FF; }
+  a:hover {
+    color: #1560FF; }
+
 body {
   background: #FFE44E; }
 
 footer {
-  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
+  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%) !important; }
+
+.menu-list a:hover {
+  background: #D1BB40; }
 
 .navbar-item.has-dropdown .navbar-dropdown {
   display: none; }
@@ -7015,6 +7023,20 @@ section {
     font-size: 16px;
     padding: 8px;
     height: 48px; }
+
+.button {
+  font-size: 16px;
+  height: 56px;
+  padding-right: 1.25em;
+  padding-left: 1.25em; }
+  .button.is-small {
+    font-size: 14px;
+    height: 48px;
+    padding-right: 1.25em;
+    padding-left: 1.25em; }
+  .button.is-large {
+    font-size: 18px;
+    height: 64px; }
 
 .navbar {
   background: transparent;
@@ -7096,6 +7118,9 @@ section {
   background: #FFF6CB; }
   .regular-section.stripe {
     background: repeating-linear-gradient(-55deg, #000, #000 30px, #FFE44E 30px, #FFE44E 60px); }
+  @media screen and (max-width: tablet-1px) {
+    .regular-section.is-centered {
+      text-align: center !important; } }
 
 .padded-section {
   padding-left: 24px;
@@ -7154,11 +7179,19 @@ section {
     padding: 24px 0; }
 
 .launching-timer .timer {
-  padding: 32px 0; }
+  padding: 0 0 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .launching-timer .timer li {
+    padding: 16px; }
 
 .launching-timer .subtitle {
   color: #7a7a7a;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .sign-up-cta .title {
   padding: 24px 0; }
@@ -7177,10 +7210,8 @@ section {
     color: #7a7a7a;
     font-weight: 700; }
 
-.early-access .gold-checked {
-  display: flex;
-  align-items: center;
-  font-size: 1rem; }
+.early-access .gold-checked img {
+  vertical-align: middle; }
 
 .right-arrow {
   vertical-align: middle;
@@ -7359,6 +7390,7 @@ section {
   margin-top: 32px;
   padding: 40px 16px; }
   .daily-range .range-title {
+    font-weight: 700;
     padding-left: 16px; }
 
 .range-container {
@@ -7369,13 +7401,19 @@ section {
   margin: 0 auto; }
 
 .range-price {
-  padding: 16px; }
+  padding: 16px;
+  font-weight: 700; }
 
 .range-results {
   padding: 24px; }
   .range-results .stroked {
     text-decoration: line-through;
     color: #7a7a7a; }
+  .range-results .incentive-text p {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    margin-top: 8px; }
 
 ul.range-labels {
   width: 100%;
@@ -7523,3 +7561,14 @@ input[type='range'].n.n10:before {
     border: 1px solid #461E1E;
     color: #461E1E;
     font-size: 12px; }
+
+.social-links p {
+  margin-bottom: 12px; }
+
+.social-links .link-item {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+  box-shadow: 0px 1px 2px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
+  border-radius: 2px;
+  padding: 8px;
+  display: inline;
+  border: none; }

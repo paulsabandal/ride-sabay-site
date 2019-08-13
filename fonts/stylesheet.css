@@ -22,3 +22,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'New York';
+    src: url('NewYork-Bold.woff2') format('woff2'),
+        url('NewYork-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
