@@ -193,7 +193,7 @@ section {
 }
 
 .auth-page .header {
-    padding: 56px 0;
+    padding: 32px 0;
 }
 
 
@@ -851,4 +851,9 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
     display: inline;
     border: none;
   }
+}
+
+.radio-selection {
+  padding-bottom: 24px;
+  padding-top: 24px;
 }

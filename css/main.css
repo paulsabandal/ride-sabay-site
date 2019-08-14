@@ -7080,7 +7080,7 @@ section {
       text-align: left !important; } }
 
 .auth-page .header {
-  padding: 56px 0; }
+  padding: 32px 0; }
 
 .pre-footer {
   padding: 48px 0; }
@@ -7584,3 +7584,7 @@ input[type='range'].n.n10:before {
   padding: 8px;
   display: inline;
   border: none; }
+
+.radio-selection {
+  padding-bottom: 24px;
+  padding-top: 24px; }
