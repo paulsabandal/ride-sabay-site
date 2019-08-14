@@ -554,6 +554,9 @@ section {
 
     .button {
         height: 100%;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+        box-shadow: 0px 2px 4px #CBCBCB;
+        border: none;
     }
 }
 
@@ -856,4 +859,14 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
 .radio-selection {
   padding-bottom: 24px;
   padding-top: 24px;
+}
+
+.input {
+  background: #F8F8F8;
+  box-shadow: inset 0px 2px 4px #CBCBCB !important;
+  font-family: $family-sans-serif;
+}
+
+.disclaimer {
+  color: #818181;
 }
