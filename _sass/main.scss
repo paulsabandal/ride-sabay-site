@@ -414,6 +414,9 @@ section {
         .title {
             padding: 24px 0;
         }
+        img {
+          max-width: 180px;
+        }
     }
 }
 
@@ -427,7 +430,13 @@ section {
     }
 
     img {
-        max-width: 200px;
+        max-width: 280px;
+    }
+
+    .phone-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 }
 
@@ -801,6 +810,11 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
   padding: 0 24px;
   img {
     vertical-align: middle;
+    width: 16px;
+  }
+  li {
+    display: inline-block;
+    padding-right: 15px;
   }
 }
 

@@ -42,7 +42,7 @@
             </a>
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-link">
+                <a class="button is-link is-small">
                   <strong>Login</strong>
                 </a>
               </div>
@@ -51,6 +51,7 @@
         </div>
       </div>
     </nav>
+
 
     <section class="hero is-large">
       <div class="container is-fluid">
@@ -72,7 +73,7 @@
             <div class="card">
               <div class="daily-range">
                 <div class="from-to-rates">
-                  <h3 class="is-size-5">Check our rates</h3>
+                  <h3 class="is-size-4"><strong>Check our rates</strong></h3>
                   <div class="columns">
                     <div class="column">
                       <div class="field">
@@ -107,17 +108,40 @@
                         <span class="is-size-3" id="range-earnings">₱80.00</span>
                       </div>
                     </div>
-                    <div class="column has-text-centered">
+                    <div class="column incentive-text has-text-centered">
                       <label id="test"></label>
                       <label class="is-size-5"><strong>Save P50.00</strong></label> <br />
                       <span class="tag is-success">PRE- LAUNCH INCENTIVE!</span> <br />
-                      <span><small>Sign up now to get more benefits 
-                          and rewards!</small></span>
+                      <p>Sign up now to get more benefits 
+                          and rewards!</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="columns check-benefits is-gapless">
+                <ul class="check-benefits">
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>FREE rides</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Referral program</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Special rewards</strong>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- <div class="columns check-benefits is-gapless">
                   <div class="column">
                     <div class="gold-checked">
                       <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
@@ -133,12 +157,12 @@
                       <img src="assets/gold-check.svg"> &nbsp; <strong>Referral program</strong>
                     </div>
                   </div>
-                  <div class="column">
+                  <div class="column has-icons-right">
                     <div class="gold-checked">
                       <img src="assets/gold-check.svg"> &nbsp; <strong>Special rewards</strong>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -179,6 +203,7 @@
           <div class="columns is-vcentered">
             <div class="column is-4 is-offset-1-desktop">
               <div class="content">
+                <span class="tag is-danger">COMING SOON!</span>
                 <h1 class="title is-spaced is-size-3">Have more time for important things</h1>
                 <p class="subtitle is-size-6">
                     Sign up now to get our pre-launch freebies and 
@@ -189,7 +214,7 @@
                 </a>
               </div>
             </div>
-            <div class="column is-offset-1-desktop has-text-centered">
+            <div class="column is-offset-1-desktop has-text-centered phone-container">
               <img src="assets/passenger/phone-1.png" class="hidden" />
             </div>
           </div>
@@ -221,7 +246,7 @@
 
     <!-- What we're building -->
     <section class="how-it-works regular-section yellowed">
-      <h2 class="is-size-3 title has-text-centered">How RIDESabay works</h2>
+      <h2 class="is-size-3 title has-text-centered">How RIDE Sabay works</h2>
       <div class="container is-fluid">
         <div class="columns has-text-centered screenshots">
           <div class="column is-one-third">
@@ -242,27 +267,35 @@
 
     <!-- 1,000,000 Riders -->
     <section class="launching-timer regular-section stripe">
-      <div class="container is-fluid">
+      <div class=" is-fluid">
         <div class="card has-text-centered">
           <h3 class="is-size-3 title">RIDESabay will be launching in</h3>
-          <div class="columns timer">
-            <div class="column">
-              <p id="days" class="title is-size-1">0</p>
-              <p class="subtitle is-size-5">days</p>
-            </div>
-            <div class="column">
-              <p id="hours" class="title is-size-1">0</p>
-              <p class="subtitle is-size-5">hours</p>
-            </div>
-            <div class="column">
-              <p id="minutes" class="title is-size-1">0</p>
-              <p class="subtitle is-size-5">minutes</p>
-            </div>
-            <div class="column">
-              <p id="seconds" class="title is-size-1">0</p>
-              <p class="subtitle is-size-5">seconds</p>
-            </div>
-          </div>
+          <ul class="timer">
+            <li>
+                <p id="days" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">days</p>
+            </li>
+            <li>
+                <p id="hours" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">hours</p>
+            </li>
+            <li>
+                <p class="is-size-1">:</p>
+                <p class="subtitle is-size-6">&nbsp;</p>
+            </li>
+            <li>
+                <p id="minutes" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">minutes</p>
+            </li>
+            <li>
+                <p class="is-size-1">:</p>
+                <p class="subtitle is-size-6">&nbsp;</p>
+            </li>
+            <li>
+                <p id="seconds" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">seconds</p>
+            </li>
+          </ul>
           <p class="is-size-5"><strong>Sign up now for FREE to benefit from our promos!</strong></p>
         </div>
       </div>
@@ -272,9 +305,9 @@
     <section class="were-building-better regular-section patterned">
       <h2 class="is-size-3 title has-text-centered">We’re building a better and more rewarding app for you</h2>
       <div class="container is-fluid">
-        <div class="columns is-variable">
+        <div class="columns is-variable is-vcentered">
           <div class="column is-4 is-offset-1-desktop">
-            <p class="title is-size-4 is-new-york">Ride Now Pay Later™️ when you don’t have cash. 😎</p>
+            <p class="title is-size-4 is-new-york">Ride Now Pay Later™️ when you don’t <br /> have cash. 😎</p>
             <p class="subtitle is-size-5">A payment feature that allows you to ride now and pay at a later date.</p>
             <a href="/" class="is-size-5"><strong>Sign up now</strong><img src="assets/blue-arrow.svg" class="right-arrow"/></a>
           </div>
@@ -283,20 +316,20 @@
           </div>
         </div>
 
-        <div class="columns is-variable">
+        <div class="columns is-variable is-vcentered">
           <div class="column is-4 is-offset-1-desktop">
             <div class="picture"><img src="assets/passenger/phone-6.png" /></div>
           </div>
           <div class="column is-4 is-offset-1-desktop has-text-right">
-            <p class="title is-size-4 is-new-york">Book For Later™️. A sure ride for you. 😎</p>
+            <p class="title is-size-4 is-new-york">Book For Later™️. <br /> A sure ride for you. 😎</p>
             <p class="subtitle is-size-5">We added an advanced booking feature to help you prepare for the future. </p>
             <a href="/" class="is-size-5"><strong>Sign up now</strong><img src="assets/blue-arrow.svg" class="right-arrow"/></a>
           </div>
         </div>
 
-        <div class="columns is-variable">
+        <div class="columns is-variable is-vcentered">
           <div class="column is-4 is-offset-1-desktop">
-            <p class="title is-size-4 is-new-york">Ride Now Pay Later™️ when you don’t have cash. 😎</p>
+            <p class="title is-size-4 is-new-york">In-app messaging. Chat with your Rider  <br /> — real time. 😎</p>
             <p class="subtitle is-size-5">A payment feature that allows you to ride now and pay at a later date.</p>
             <a href="/" class="is-size-5"><strong>Sign up now</strong><img src="assets/blue-arrow.svg" class="right-arrow"/></a>
           </div>
@@ -306,7 +339,7 @@
         </div>
 
         <div class="has-text-centered faq">
-          <h3 class="is-size-4 title">Got questions? Go to our FAQ page to find out more about being a Rider</h3>
+          <h3 class="is-size-3 title">Got questions? Go to our FAQ page to find out more about being a Rider</h3>
           <p class="is-size-5">Know how to get RIDE Sabay credits and more rewards 
               by going to our FAQ. <br /> <br /> </p>
           <a class="button is-link is-large">
@@ -318,7 +351,7 @@
 
     <!-- 1,000,000 Riders -->
     <section class="regular-section early-access stripe">
-      <div class="container is-fluid">
+      <div class="is-fluid">
         <div class="card">
           <div class="columns is-vcentered">
             <div class="column is-half">
@@ -331,7 +364,7 @@
                 <div class="field">
                   <label class="label">Mobile number</label>
                   <div class="control">
-                      <input class="input" type="text" placeholder="09xx xxxxxxxx">
+                      <input class="input is-large" type="text" placeholder="09xx xxxxxxxx">
                   </div>
                 </div>
                 <div class="columns">
@@ -355,17 +388,17 @@
                   </div>
                 </div>
                 <div class="columns is-gapless">
-                  <div class="column is-one-third"">
+                  <div class="column is-one-third">
                     <div class="gold-checked">
                       <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
                     </div>
                   </div>
-                  <div class="column is-one-third"">
+                  <div class="column is-one-third has-text-centered">
                     <div class="gold-checked">
                       <img src="assets/gold-check.svg"> &nbsp; <strong>Incentive program</strong>
                     </div>
                   </div>
-                  <div class="column is-one-third"">
+                  <div class="column is-one-third has-text-right">
                     <div class="gold-checked">
                       <img src="assets/gold-check.svg"> &nbsp; <strong>Great community</strong>
                     </div>
@@ -407,11 +440,12 @@
               </ul>
             </aside>
           </div>
-          <div class="column is-new-york">
-            <a class="button"><img src="assets/facebook.svg" /></a>
-            <a class="button"><img src="assets/twitter.svg" /></a>
-            <a class="button"><img src="assets/instagram.svg" /></a>
-            <a class="button"><img src="assets/youtube.svg" /></a>
+          <div class="column social-links">
+            <p><small><strong>Like our page to get updates!</strong></small></p>
+            <a class="button link-item"><img src="assets/facebook.svg" /></a>
+            <a class="button link-item"><img src="assets/twitter.svg" /></a>
+            <a class="button link-item"><img src="assets/instagram.svg" /></a>
+            <a class="button link-item"><img src="assets/youtube.svg" /></a>
           </div>
           <div class="column is-new-york has-text-right">
             <small>All rights reserved</small>

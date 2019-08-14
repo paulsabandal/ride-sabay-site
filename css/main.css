@@ -7231,6 +7231,8 @@ section {
     padding: 24px 0; }
   .how-it-works .screenshots .title {
     padding: 24px 0; }
+  .how-it-works .screenshots img {
+    max-width: 180px; }
 
 .have-more-time .card {
   padding-bottom: 0; }
@@ -7239,7 +7241,12 @@ section {
   padding-bottom: 0; }
 
 .have-more-time img {
-  max-width: 200px; }
+  max-width: 280px; }
+
+.have-more-time .phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .people-trust {
   padding: 120px 0;
@@ -7546,7 +7553,11 @@ input[type='range'].n.n10:before {
   font-size: 12px;
   padding: 0 24px; }
   .check-benefits img {
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: 16px; }
+  .check-benefits li {
+    display: inline-block;
+    padding-right: 15px; }
 
 .tag:not(body) {
   border-radius: 16.5px;
