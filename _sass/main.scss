@@ -70,7 +70,11 @@ footer {
         display: block;
       }
     }
- }
+  }
+
+  .buttons {
+    padding-left: 56px;
+  }
 }
 
 .content h1:not(:first-child) {
@@ -178,13 +182,15 @@ section {
 }
 
 .card-spacing {
-    margin-top: 48px;
+    margin: 48px auto;
 }
 
 // Auth Pages
 .auth-page {
     background: $yellow-gradient;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     .title, .subtitle {
       @include until($tablet) {
         text-align: left !important;

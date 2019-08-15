@@ -6993,6 +6993,9 @@ footer {
 .navbar-item.has-dropdown.is-active .navbar-dropdown {
   display: block; }
 
+.navbar-item .buttons {
+  padding-left: 56px; }
+
 .content h1:not(:first-child) {
   margin-top: .5em; }
 
@@ -7070,11 +7073,13 @@ section {
   font-family: "New York", "Arial", sans-serif; }
 
 .card-spacing {
-  margin-top: 48px; }
+  margin: 48px auto; }
 
 .auth-page {
   background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%);
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   @media screen and (max-width: 768px) {
     .auth-page .title, .auth-page .subtitle {
       text-align: left !important; } }
