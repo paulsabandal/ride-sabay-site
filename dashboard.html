@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My first Bulma website</title>
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body class="dashboard">
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
@@ -26,7 +27,7 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-white">
+                <a class="button is-white is-small">
                   <strong>Log out</strong>
                 </a>
               </div>
@@ -37,13 +38,13 @@
     </nav>
 
     <section class="hero is-large">
-      <div class="container is-fluid">
+      <div class="welcome-and-count">
         <div class="columns">
           <div class="column has-text-centered">
             <div class="content">
               <h1 class="title is-spaced is-size-1">Welcome to your dashboard, Tony.</h1>
               <p class="subtitle is-size-4">
-                We are working very hard to build you a better, faster, and more rewarding motorcycle taxi app — so get excited! Invite more people so you can unlock more rewards and benefits!
+                We are working very hard to build you a better, faster, and more rewarding motorcycle<br /> taxi app — so get excited! Invite more people so you can unlock more rewards and benefits!
               </p>
             </div>
           </div>
@@ -53,7 +54,7 @@
             <label class="label">Personal referral code</label>
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Find a repository">
+                <input class="input is-large" type="text" value="http:bit.ly/refby_tonystark">
               </p>
               <p class="control">
                 <a class="button is-link">
@@ -61,11 +62,11 @@
                 </a>
               </p>
             </div>
-            <div class="is-new-york">
-              <a class="button is-large"><img src="assets/facebook.svg" /></a>
-              <a class="button is-large"><img src="assets/twitter.svg" /></a>
-              <a class="button is-large"><img src="assets/instagram.svg" /></a>
-              <a class="button is-large"><img src="assets/youtube.svg" /></a>
+            <div class="is-new-york social-links">
+              <a class="button link-item"><img src="assets/facebook.svg" /></a>
+              <a class="button link-item"><img src="assets/twitter.svg" /></a>
+              <a class="button link-item"><img src="assets/instagram.svg" /></a>
+              <a class="button link-item"><img src="assets/youtube.svg" /></a>
             </div>
           </div>
           <div class="column">
@@ -116,7 +117,7 @@
 
     <!-- 1,000,000 Riders -->
     <section class="unlock-rewards-ad regular-section stripe">
-      <div class="container is-fluid">
+      <div>
         <div class="card">
           <div class="columns is-vcentered">
             <div class="column">
@@ -135,7 +136,7 @@
         <div class="columns is-centered">
           <div class="column is-4">
             <div class="unlock-card locked">
-                <div class="card-title has-text-centered is-new-york">UNLOCKED!</div>
+                <div class="card-title has-text-centered is-new-york"><strong>UNLOCKED!</strong></div>
                 <div class="content">
                   <span><img src="assets/dashboard/yellow-check.svg" /> &nbsp; <strong>+50 Pesos</strong> RIDESabay credits</span> <br />
                   <span><img src="assets/dashboard/yellow-check.svg" /> &nbsp; Upgrade to <strong>Level 1 Account</strong></span>
@@ -150,8 +151,8 @@
                 <div class="card-title has-text-centered"><strong>REFER 3</strong> TO UNLOCK</div>
                 <div class="content">
                   <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; <strong>+150 Pesos</strong> RIDESabay credits</span> <br />
-                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Be on the waitlist for early access</span> <br />
-                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Get 125 Points</span>
+                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Be on the <strong>waitlist for early access</strong></span> <br />
+                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Get <strong>125 Points</strong></span>
                 </div>
             </div>
           </div>
@@ -161,7 +162,7 @@
                 <div class="content">
                   <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; <strong>+300 Pesos</strong> RIDE Sabay credits</span> <br />
                   <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; <strong>Secure your spot</strong> when we launch</span> <br />
-                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Upgrade to Level 2 Account</span>
+                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Upgrade to <strong>Level 2 Account</strong></span>
                 </div>
             </div>
           </div>
@@ -182,7 +183,7 @@
                 <div class="card-title has-text-centered"><strong>REFER 12</strong> TO UNLOCK</div>
                 <div class="content">
                   <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; <strong>+600 Pesos</strong> RIDESabay credits</span> <br />
-                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Get 125 Points</span>
+                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Get <strong>125 Points</strong></span>
                 </div>
             </div>
           </div>
@@ -191,7 +192,7 @@
                 <div class="card-title has-text-centered"><strong>REFER 15</strong> TO UNLOCK</div>
                 <div class="content">
                   <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; <strong>+950 Pesos</strong> RIDE Sabay credits</span> <br />
-                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Upgrade to Level 2 Account</span>
+                  <span><img src="assets/dashboard/grey-check.svg" /> &nbsp; Upgrade to <strong>Level 2 Account</strong></span>
                 </div>
             </div>
           </div>
@@ -211,17 +212,17 @@
           <br /> <br />
           <p class="is-size-6"><strong>Share this poster in social media so you can start using our app sooner.</strong></p>
           <br />
-          <div class="is-new-york">
-            <a class="button is-large"><img src="assets/facebook.svg" /></a>
-            <a class="button is-large"><img src="assets/twitter.svg" /></a>
-            <a class="button is-large"><img src="assets/instagram.svg" /></a>
-            <a class="button is-large"><img src="assets/youtube.svg" /></a>
+          <div class="social-links">
+            <a class="button link-item"><img src="assets/facebook.svg" /></a>
+            <a class="button link-item"><img src="assets/twitter.svg" /></a>
+            <a class="button link-item"><img src="assets/instagram.svg" /></a>
+            <a class="button link-item"><img src="assets/youtube.svg" /></a>
           </div>
         </div>
 
         <div class="has-text-centered faq">
-          <h3 class="is-size-4 title">Got questions? Go to our FAQ page to find out more about being a Rider</h3>
-          <p class="is-size-5">Know how to get RIDE Sabay credits and more rewards 
+          <h3 class="is-size-3 title">Got questions? Check our FAQ to learn more</h3>
+          <p class="is-size-5">Know how to get RIDE Sabay credits and more <br /> rewards 
               by going to our FAQ. <br /> <br /> </p>
           <a class="button is-link is-large">
             <strong>Go to FAQ</strong>
@@ -256,11 +257,12 @@
               </ul>
             </aside>
           </div>
-          <div class="column is-new-york">
-            <a class="button"><img src="assets/facebook.svg" /></a>
-            <a class="button"><img src="assets/twitter.svg" /></a>
-            <a class="button"><img src="assets/instagram.svg" /></a>
-            <a class="button"><img src="assets/youtube.svg" /></a>
+          <div class="column social-links">
+            <p><small><strong>Like our page to get updates!</strong></small></p>
+            <a class="button link-item"><img src="assets/facebook.svg" /></a>
+            <a class="button link-item"><img src="assets/twitter.svg" /></a>
+            <a class="button link-item"><img src="assets/instagram.svg" /></a>
+            <a class="button link-item"><img src="assets/youtube.svg" /></a>
           </div>
           <div class="column is-new-york has-text-right">
             <small>All rights reserved</small>
@@ -271,7 +273,6 @@
         </div>
       </div>
     </footer>
-
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>

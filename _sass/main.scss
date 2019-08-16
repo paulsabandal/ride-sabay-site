@@ -107,7 +107,6 @@ section {
 
 .button.is-link {
     background: linear-gradient(0deg, #1560FF 0%, #6A99FF 100%);
-    box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
     border-radius: 4px;
     border: none;
     font-weight: 700;
@@ -122,9 +121,14 @@ section {
 
 .button {
   font-size: 16px;
+  box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
   height: 56px;
   padding-right: 1.25em;
   padding-left: 1.25em;
+
+  &.is-white {
+    color: $blue !important;
+  }
 
   &.is-small {
     font-size: 14px;
@@ -479,6 +483,7 @@ section {
 .count-box {
     background: $white;
     font-size: 2rem;
+    font-weight: 700;
     height: 100%;
     width: 100%;
     padding: 24px;
@@ -487,7 +492,7 @@ section {
 
 .step-box {
     background: $yellow-gradient;
-    margin: 48px 24px;
+    margin: 48px 12px;
     padding: 40px 32px;
 
     .count {
@@ -497,6 +502,7 @@ section {
         height: 32px;
         text-align: center;
         padding: 4px;
+        font-weight: 700;
         margin: 0 0 16px;
     }
 }
@@ -537,6 +543,7 @@ section {
         padding: 24px 16px;
         border-radius: 4px;
         line-height: 2.5;
+        height: 176px;
 
         img {
             vertical-align: middle;
@@ -875,4 +882,8 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
 
 .disclaimer {
   color: #818181;
+}
+
+.welcome-and-count {
+  padding: 0 80px;
 }

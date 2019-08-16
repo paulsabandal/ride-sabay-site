@@ -7018,7 +7018,6 @@ section {
 
 .button.is-link {
   background: linear-gradient(0deg, #1560FF 0%, #6A99FF 100%);
-  box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
   border-radius: 4px;
   border: none;
   font-weight: 700; }
@@ -7029,9 +7028,12 @@ section {
 
 .button {
   font-size: 16px;
+  box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
   height: 56px;
   padding-right: 1.25em;
   padding-left: 1.25em; }
+  .button.is-white {
+    color: #1560FF !important; }
   .button.is-small {
     font-size: 14px;
     height: 48px;
@@ -7276,6 +7278,7 @@ section {
 .count-box {
   background: white;
   font-size: 2rem;
+  font-weight: 700;
   height: 100%;
   width: 100%;
   padding: 24px;
@@ -7283,7 +7286,7 @@ section {
 
 .step-box {
   background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%);
-  margin: 48px 24px;
+  margin: 48px 12px;
   padding: 40px 32px; }
   .step-box .count {
     background: white;
@@ -7292,6 +7295,7 @@ section {
     height: 32px;
     text-align: center;
     padding: 4px;
+    font-weight: 700;
     margin: 0 0 16px; }
 
 .referral-counts {
@@ -7319,7 +7323,8 @@ section {
     background: #F8F8F8;
     padding: 24px 16px;
     border-radius: 4px;
-    line-height: 2.5; }
+    line-height: 2.5;
+    height: 176px; }
     .unlock-card .content img {
       vertical-align: middle; }
 
@@ -7604,3 +7609,6 @@ input[type='range'].n.n10:before {
 
 .disclaimer {
   color: #818181; }
+
+.welcome-and-count {
+  padding: 0 80px; }
