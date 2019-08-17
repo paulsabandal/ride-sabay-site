@@ -7594,7 +7594,7 @@ input[type='range'].n.n10:before {
   background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
   box-shadow: 0px 1px 2px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
   border-radius: 2px;
-  padding: 8px;
+  padding: 10px;
   display: inline;
   border: none; }
 
