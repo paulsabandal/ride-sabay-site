@@ -7300,6 +7300,9 @@ section {
 
 .referral-counts {
   padding-top: 48px; }
+  .referral-counts .tooltip {
+    float: right;
+    vertical-align: middle; }
 
 .unlock-rewards-ad .card {
   padding: 80px 48px;

@@ -509,6 +509,10 @@ section {
 
 .referral-counts {
     padding-top: 48px;
+    .tooltip {
+      float: right;
+      vertical-align: middle;
+    }
 }
 
 .unlock-rewards-ad .card {
@@ -887,3 +891,4 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
 .welcome-and-count {
   padding: 0 80px;
 }
+
