@@ -70,13 +70,13 @@
                 <div class="column is-one-quarter">
                     <div class="tabs is-centered">
                         <ul>
-                            <li class="is-active" onclick="openTab(event,'WebDev')"><a>Passenger</a></li>
-                            <li><a>Rider</a></li>
+                            <li class="tab is-active" onclick="openTab(event,'WebDev')"><a>Passenger</a></li>
+                            <li class="tab" onclick="openTab(event,'WebAud')"><a>Rider</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div id="WebDev" class="">
+            <div id="WebDev"class="content-tab">
               <div class="accordion">
                   <div class="accordion-item">
                       <input type="checkbox" id="chck1" class="ticker">
@@ -114,6 +114,9 @@
                       </div>
                   </div>
               </div>
+            </div>
+            <div id="WebAud" class="content-tab" style="display:none">
+              <p>Test</p>
             </div>
         </div>
     </section>
@@ -163,6 +166,21 @@
     <script type="text/javascript" src="lib/bulma-collapsible.min.js"></script>
     <script type="text/javascript" src="lib/index.js"></script>
     <script type="text/javascript" src="lib/main.js"></script>
-
+    <script type="text/javascript">
+      function openTab(evt, tabName) {
+        console.log("test");
+        var i, x, tablinks;
+        x = document.getElementsByClassName("content-tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " is-active";
+      }
+    </script>
   </body>
 </html>
