@@ -9,6 +9,8 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 @import "../node_modules/bulma/bulma";
 @import "../fonts/stylesheet.css";
+@import "../node_modules/bulma-tooltip/src/sass/index.sass";
+
 
 // 2. Set your own initial variables
 // Update the blue shade, used for links
@@ -509,10 +511,13 @@ section {
 
 .referral-counts {
     padding-top: 48px;
-    .tooltip {
-      float: right;
-      vertical-align: middle;
+    .label {
+      .tooltip {
+        float: right;
+        vertical-align: middle;
+      }
     }
+
 }
 
 .unlock-rewards-ad .card {
