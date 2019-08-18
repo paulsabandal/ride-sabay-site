@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <% include ../partials/head %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body class="auth-page">
+    <% include ../partials/header-auth %>
+    <section class="padded-section">
+        <div class="container">
+          <div class="columns is-marginless">
+            <div class="column is-6-desktop is-offset-3-desktop has-text-centered">
+              <div class="content">
+                <h1 class="title is-spaced is-size-2">Welcome!</h1>
+                <p class="subtitle is-size-4">
+                  Happy to see you here! 🥰 Help us provide you a better  experience by choosing the right options below. 😊
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="padded-section">
+      <div class="container card-spacing">
+        <div class="columns is-marginless">
+          <div class="column is-6-desktop is-offset-3-desktop">
+            <div class="card">
+              <div class="card-content">
+                <p class="label">Please choose one:</p>
+                <div class="columns radio-selection">
+                  <div class="column is-one-third">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        <span class="is-size-5"> &nbsp; <strong>I'm a Passenger </strong></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        <span class="is-size-5"> &nbsp; <strong>I'm a Rider </strong></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <p class="label">Which language do you prefer?</p>
+                
+                <div class="columns radio-selection">
+                  <div class="column is-one-third">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        <span class="is-size-5"> &nbsp; <strong>English </strong></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        <span class="is-size-5"> &nbsp; <strong>Tagalog </strong></span>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- <div class="column is-6">
+                    <button class="button is-large rs-btn is-fullwidth"> 
+                      <p class="is-size-5 has-text-weight-bold is-new-york"><span>English</span></p>
+                    </button>
+                  </div>
+                  <div class="column is-6">
+                    <button class="button is-large rs-btn is-fullwidth"> 
+                      <p class="is-size-5 has-text-weight-bold is-new-york"><span>Tagalog</span></p>
+                    </button>
+                  </div> -->
+                </div>
+                <button class="button is-large is-fullwidth is-link fixed-size" disabled>Enter website</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>

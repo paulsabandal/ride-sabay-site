@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <% include ../partials/head %>
+  </head>
+  <body>
+    <% include ../partials/header %>
+
+    <section class="regular-section yellowed is-large">
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column-12">
+            <div class="content">
+              <h1 class="title is-spaced is-size-2">Frequently Asked Questions <br /> (FAQ)</h1>
+            </div>
+          </div>
+          <div class="column">&nbsp;</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="regular-section">
+        <div class="container is-fluid">
+            <div class="columns is-centered">
+                <div class="column is-one-quarter">
+                    <div class="tabs is-centered">
+                        <ul>
+                            <li class="tab is-active" onclick="openTab(event,'passenger-tab')"><a>Passenger</a></li>
+                            <li class="tab" onclick="openTab(event,'rider-tab')"><a>Rider</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="passenger-tab"class="content-tab">
+              <div class="accordion">
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck1" class="ticker">
+                      <label class="accordion-item-label" for="chck1">Is it easy to sign up?</label>
+                      <div class="accordion-item-content">
+                          Yes. Signing up takes less than 1-minute. You just need a working mobile number to sign up. 😎
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck2" class="ticker">
+                      <label class="accordion-item-label" for="chck2">How do I sign up?</label>
+                      <div class="accordion-item-content">
+                          <a href="/registration.html"> <strong>Click here to sign up. 🥰 </strong></a>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck3" class="ticker">
+                      <label class="accordion-item-label" for="chck3">When will RIDE Sabay launch?</label>
+                      <div class="accordion-item-content">
+                        We plan on launching by 2020. However, as any starting company, we might encounter some issues that might delay our launch. So please bear with us. 😊
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck3" class="ticker">
+                      <label class="accordion-item-label" for="chck3">Do you have a referral program?</label>
+                      <div class="accordion-item-content">
+                          Yes we do. As soon as you sign up, you’ll already have P50 worth of RIDE Sabay credits. So sign up now and start referring to get benefits and rewards! 🥳
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck4" class="ticker">
+                      <label class="accordion-item-label" for="chck4">
+                        What happens if I share the RIDE Sabay poster?
+                      </label>
+                      <div class="accordion-item-content">
+                          We will love you forever! 😉 Jokes aside, by sharing the RIDE Sabay poster in your social media, you are helping us launch the app faster. 
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck5" class="ticker">
+                      <label class="accordion-item-label" for="chck5">What is the difference of RIDE Sabay to other motorcycle ride-sharing app?</label>
+                      <div class="accordion-item-content">
+                          RIDE Sabay provides a better overall experience from the pick up, drop off, and using of the app. 🤓
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck6" class="ticker">
+                      <label class="accordion-item-label" for="chck6">Do you have a rewards program?</label>
+                      <div class="accordion-item-content">
+                          Yes we do! Once we launch, you can see our very valuable Rewards Program. We designed it to give back to all our users for every trip — especially the early adopters. 🤩
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck7" class="ticker">
+                      <label class="accordion-item-label" for="chck7">What can I do with Points?</label>
+                      <div class="accordion-item-content">
+                          You can exchange points with Rewards inside the mobile app once we launch. 😝
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck8" class="ticker">
+                      <label class="accordion-item-label" for="chck8">How can I unlock more rewards?</label>
+                      <div class="accordion-item-content">
+                          During our pre-launch, you can unlock more rewards by referring RIDE Sabay to other people using your referral link. 🤯
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck9" class="ticker">
+                      <label class="accordion-item-label" for="chck9">What are Account Levels?
+                      </label>
+                      <div class="accordion-item-content">
+                          Account Levels are milestones in using RIDE Sabay. The more Points you earn, the higher your level can be. The higher your level is, the more benefits and rewards you can get! Oh, we also have a hidden level reserved to our most deserving Passengers. 🤫
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <input type="checkbox" id="chck10" class="ticker">
+                      <label class="accordion-item-label" for="chck10">What is Ride Now Pay Later™️?
+                      </label>
+                      <div class="accordion-item-content">
+                          Ride Now Pay Later™️ is a feature of RIDE Sabay. We help you get to your destination even if you don’t have money. Book, ride, and arrive at your destination and pay us one week later. 😘
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div id="rider-tab" class="content-tab" style="display:none">
+              <div class="accordion">
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck1" class="ticker">
+                    <label class="accordion-item-label" for="rchck1">How can I become a Rider?</label>
+                    <div class="accordion-item-content">
+                        You can start by signing up with RIDE Sabay. <a href="/registration.html"> <strong>Click here to sign up — it’s FREE. 😊 </strong></a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck2" class="ticker">
+                    <label class="accordion-item-label" for="rchck2">How much can I earn daily, weekly, monthly?</label>
+                    <div class="accordion-item-content">
+                        On average, you can earn up to P1,800 every day depending on the amount of time you work and the amount of trips you complete. 🤑
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck3" class="ticker">
+                    <label class="accordion-item-label" for="rchck3">Do I qualify to be a Rider?
+                    </label>
+                    <div class="accordion-item-content">
+                        Yes, as long as you have a motorcycle and a smartphone. 😄
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck4" class="ticker">
+                    <label class="accordion-item-label" for="rchck4">Can I work part time?
+                    </label>
+                    <div class="accordion-item-content">
+                        Yes you can! You can ride for as little as 1 hour a day. But of course, we recommend you ride more than that to help the RIDE Sabay community. 😉
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck5" class="ticker">
+                    <label class="accordion-item-label" for="rchck5">What are the benefits of being a RIDE Sabay Rider?
+                    </label>
+                    <div class="accordion-item-content">
+                        You can earn up to P1,800 every day, be part of the fastest growing motorcycle community, and other incentives once we launch. 🤑
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck6" class="ticker">
+                    <label class="accordion-item-label" for="rchck6">Is there an incentive program?
+                    </label>
+                    <div class="accordion-item-content">
+                        Yes, we have an incentive program designed to help our Riders earn more. 😏
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck7" class="ticker">
+                    <label class="accordion-item-label" for="rchck7">Do you have a referral program?
+                    </label>
+                    <div class="accordion-item-content">
+                        Yes, we have a referral program. However, our referral program is only for a limited time, so sign up now and start referring other Riders.  <a href="/registration.html"> <strong>Click here to sign up — it’s FREE. 😊 </strong></a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck8" class="ticker">
+                    <label class="accordion-item-label" for="rchck8">What are the requirements?
+                    </label>
+                    <div class="accordion-item-content">
+                        To sign up now during our pre-launch, you will only need a working mobile number and an email address. 😌
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck9" class="ticker">
+                    <label class="accordion-item-label" for="rchck9">When is RIDE Sabay launching?
+                    </label>
+                    <div class="accordion-item-content">
+                        We plan on launching by early 2020. However, as any starting company, we might encounter some issues that might delay our launch. So please bear with us. 😊
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck10" class="ticker">
+                    <label class="accordion-item-label" for="rchck10">Do I need to pay to be a Rider?
+                    </label>
+                    <div class="accordion-item-content">
+                        No, you don’t need to pay to be a Rider. Being a Rider is for free, so sign up now. <a href="/registration.html"> <strong>Click here to sign up </strong></a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck11" class="ticker">
+                    <label class="accordion-item-label" for="rchck11">How long does it take to sign up?
+                    </label>
+                    <div class="accordion-item-content">
+                        Signing up takes less than 1-minute — so sign up now. <a href="/registration.html"> <strong>Click here to sign up — it’s FREE. 😊 </strong></a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck12" class="ticker">
+                    <label class="accordion-item-label" for="rchck12">What can I do with Points?
+                    </label>
+                    <div class="accordion-item-content">
+                        You can exchange points with Rewards inside the app once we launch. 😝 
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck13" class="ticker">
+                    <label class="accordion-item-label" for="rchck13">How can I unlock more rewards?
+                    </label>
+                    <div class="accordion-item-content">
+                        During our pre-launch, you can unlock more rewards by referring RIDE Sabay to other people using your referral link. 🤯
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck14" class="ticker">
+                    <label class="accordion-item-label" for="rchck14">What are Account Levels?
+                    </label>
+                    <div class="accordion-item-content">
+                        Account Levels are milestones in using RIDE Sabay. The more Points you earn, the higher your level can be. The higher your level is, the more benefits and rewards you can get! Oh, we also have a hidden level reserved to our most deserving Riders. 🤫
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck15" class="ticker">
+                    <label class="accordion-item-label" for="rchck15">What are Rider Journeys?
+                    </label>
+                    <div class="accordion-item-content">
+                        Rider Journeys are group travel events organised by RIDE Sabay Ambassadors. It’s our way of making the RIDE Sabay Rider Community be the best community there is. 
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="rchck17" class="ticker">
+                    <label class="accordion-item-label" for="rchck17">What happens if I share the RIDE Sabay poster?
+                    </label>
+                    <div class="accordion-item-content">
+                        We will love you forever! 😉 Jokes aside, by sharing the RIDE Sabay poster in your social media, you are helping us launch the app faster. ☺️
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <% include ../partials/footer %>
+    </footer>
+
+    <script type="text/javascript" src="lib/bulma-collapsible.min.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+    <script type="text/javascript" src="lib/main.js"></script>
+    <script type="text/javascript">
+      function openTab(evt, tabName) {
+        console.log("test");
+        var i, x, tablinks;
+        x = document.getElementsByClassName("content-tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " is-active";
+      }
+    </script>
+  </body>
+</html>

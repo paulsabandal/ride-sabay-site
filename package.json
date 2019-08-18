@@ -65,10 +65,13 @@
     "deploy": "npm run css-deploy && npm run js-build",
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "start": "nodemon -e '.coffee|.js|.ejs' server.js npm-run-all --parallel css-watch js-watch "
   },
   "version": "0.0.3",
   "dependencies": {
-    "bulma-tooltip": "^2.0.2"
+    "bulma-tooltip": "^2.0.2",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
   }
 }

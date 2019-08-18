@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <% include ../partials/head %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body>
+    <% include ../partials/header %>
+
+    <section class="hero is-large">
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column is-5">
+            <div class="content">
+              <span class="tag is-danger">COMING SOON!</span>
+              <h1 class="title is-spaced is-size-2">Move through traffic and do more of what you love.</h1>
+              <p class="subtitle is-size-4">
+                <strong>RIDE Sabay</strong> is the newest motorcycle ride-sharing app in town. We make moving easy. 😎
+              </p>
+              <a class="button is-large is-link">
+                <strong>Sign up now</strong>
+              </a>
+              <img src="assets/product-hunt.svg" class="ph-badge" />
+            </div>
+          </div>
+          <div class="column is-offset-1-desktop">
+            <div class="card">
+              <div class="daily-range">
+                <div class="from-to-rates">
+                  <h3 class="is-size-4"><strong>Check our rates</strong></h3>
+                  <div class="columns">
+                    <div class="column">
+                      <div class="field">
+                        <label class="label">From</label>
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="">
+                            <span class="icon is-small is-right">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div class="field">
+                        <label class="label">To</label>
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="">
+                            <span class="icon is-small is-right">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="range-results">
+                  <div class="columns">
+                    <div class="column">
+                      <label><strong>Price</strong></label>
+                      <div class="range-price is-new-york yellowed-gradient">
+                        <span class="is-size-5 stroked">₱120</span>
+                        <span class="is-size-3" id="range-earnings">₱80.00</span>
+                      </div>
+                    </div>
+                    <div class="column incentive-text has-text-centered">
+                      <label id="test"></label>
+                      <label class="is-size-5"><strong>Save P50.00</strong></label> <br />
+                      <span class="tag is-success">PRE- LAUNCH INCENTIVE!</span> <br />
+                      <p>Sign up now to get more benefits 
+                          and rewards!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="check-benefits">
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>FREE rides</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Referral program</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Special rewards</strong>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- <div class="columns check-benefits is-gapless">
+                  <div class="column">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>FREE rides</strong>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Referral program</strong>
+                    </div>
+                  </div>
+                  <div class="column has-icons-right">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Special rewards</strong>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why become a rider -->
+    <section class="why-become-a-rider regular-section patterned">
+      <h2 class="is-size-3 title has-text-centered">Why sign up with RIDE Sabay?</h2>
+      <div class="container is-fluid">
+        <div class="columns is-variable is-6 intro-items">
+          <div class="column is-one-third">
+            <div class="picture"><img src="assets/passenger/motor.svg" /></div>
+            <p class="title is-size-5">Bring you to your destination — fast</p>
+            <p class="subtitle is-size-6">Our highly trained riders will make sure you get to your destination on time.</p>
+          </div>
+          <div class="column is-one-third">
+            <div class="picture"><img src="assets/passenger/watch.svg" /></div>
+            <p class="title is-size-5">Save you time and money — everyday</p>
+            <p class="subtitle is-size-6">We’ll help you become financially independent. </p>
+          </div>
+          <div class="column is-one-third">
+            <div class="picture"><img src="assets/passenger/gift.svg" /></div>
+            <p class="title is-size-5">Give you amazing rewards — regularly </p>
+            <p class="subtitle is-size-6">We value loyalty, so we’re bringing you a more valuable rewards program.</p>
+          </div>
+        </div>
+        <p class="title is-size-4 has-text-centered">Oh, signing up is also for FREE 🥳</p>
+      </div>
+    </section>
+
+    <!-- 1,000,000 Riders -->
+    <section class="have-more-time regular-section stripe">
+      <div class="container is-fluid">
+        <div class="card">
+          <div class="columns is-vcentered">
+            <div class="column is-4 is-offset-1-desktop">
+              <div class="content">
+                <span class="tag is-danger">COMING SOON!</span>
+                <h1 class="title is-spaced is-size-3">Have more time for important things</h1>
+                <p class="subtitle is-size-6">
+                    Sign up now to get our pre-launch freebies and 
+                    be part of our pioneer user group. 
+                </p>
+                <a class="button is-link">
+                  <strong>Sign up now</strong>
+                </a>
+              </div>
+            </div>
+            <div class="column is-offset-1-desktop has-text-centered phone-container">
+              <img src="assets/passenger/phone-1.png" class="hidden" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- People trust -->
+    <section class="people-trust regular-section patterned">
+        <div class="container is-fluid">
+          <div class="columns has-text-centered">
+            <div class="column">
+              <div class="content">
+                <h1 class="title is-spaced is-size-3">10,000,000 + people trust motorcycle ride-sharing apps to help them get to their destination —fast!</h1>
+                <p class="subtitle is-size-6">
+                    Sign up now to get our pre-launch freebies and 
+                    be part of our pioneer user group. 
+                </p>
+                <a class="button is-link">
+                  <strong>Sign up now</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <!-- What we're building -->
+    <section class="how-it-works regular-section yellowed">
+      <h2 class="is-size-3 title has-text-centered">How RIDE Sabay works</h2>
+      <div class="container is-fluid">
+        <div class="columns has-text-centered screenshots">
+          <div class="column is-one-third">
+            <div class="picture"><img src="assets/passenger/phone-2.png" /></div>
+            <p class="title is-size-4">Enter pick up and drop off location in the app</p>
+          </div>
+          <div class="column is-one-third">
+            <div class="picture"><img src="assets/passenger/phone-3.png" /></div>
+            <p class="title is-size-4">Book and wait for Rider to arrive in pick up location</p>
+          </div>
+          <div class="column is-one-third">
+            <div class="picture"><img src="assets/passenger/phone-4.png" /></div>
+            <p class="title is-size-4">Safely ride away to your destination with Rider</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1,000,000 Riders -->
+    <section class="launching-timer regular-section stripe">
+      <div class=" is-fluid">
+        <div class="card has-text-centered">
+          <h3 class="is-size-3 title">RIDESabay will be launching in</h3>
+          <ul class="timer">
+            <li>
+                <p id="days" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">days</p>
+            </li>
+            <li>
+                <p id="hours" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">hours</p>
+            </li>
+            <li>
+                <p class="is-size-1">:</p>
+                <p class="subtitle is-size-6">&nbsp;</p>
+            </li>
+            <li>
+                <p id="minutes" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">minutes</p>
+            </li>
+            <li>
+                <p class="is-size-1">:</p>
+                <p class="subtitle is-size-6">&nbsp;</p>
+            </li>
+            <li>
+                <p id="seconds" class="title is-size-1">0</p>
+                <p class="subtitle is-size-6">seconds</p>
+            </li>
+          </ul>
+          <p class="is-size-5"><strong>Sign up now for FREE to benefit from our promos!</strong></p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- We're building better -->
+    <section class="were-building-better regular-section patterned">
+      <h2 class="is-size-3 title has-text-centered">We’re building a better and more rewarding app for you</h2>
+      <div class="container is-fluid">
+        <div class="columns is-variable is-vcentered">
+          <div class="column is-4 is-offset-1-desktop">
+            <p class="title is-size-4 is-new-york">Ride Now Pay Later™️ when you don’t <br /> have cash. 😎</p>
+            <p class="subtitle is-size-5">A payment feature that allows you to ride now and pay at a later date.</p>
+            <a href="/" class="is-size-5"><strong>Sign up now</strong><img src="assets/blue-arrow.svg" class="right-arrow"/></a>
+          </div>
+          <div class="column is-4 is-offset-1-desktop">
+            <div class="picture"><img src="assets/passenger/phone-5.png" /></div>
+          </div>
+        </div>
+
+        <div class="columns is-variable is-vcentered">
+          <div class="column is-4 is-offset-1-desktop">
+            <div class="picture"><img src="assets/passenger/phone-6.png" /></div>
+          </div>
+          <div class="column is-4 is-offset-1-desktop has-text-right">
+            <p class="title is-size-4 is-new-york">Book For Later™️. <br /> A sure ride for you. 😎</p>
+            <p class="subtitle is-size-5">We added an advanced booking feature to help you prepare for the future. </p>
+            <a href="/" class="is-size-5"><strong>Sign up now</strong><img src="assets/blue-arrow.svg" class="right-arrow"/></a>
+          </div>
+        </div>
+
+        <div class="columns is-variable is-vcentered">
+          <div class="column is-4 is-offset-1-desktop">
+            <p class="title is-size-4 is-new-york">In-app messaging. Chat with your Rider  <br /> — real time. 😎</p>
+            <p class="subtitle is-size-5">A payment feature that allows you to ride now and pay at a later date.</p>
+            <a href="/" class="is-size-5"><strong>Sign up now</strong><img src="assets/blue-arrow.svg" class="right-arrow"/></a>
+          </div>
+          <div class="column is-4 is-offset-1-desktop">
+            <div class="picture"><img src="assets/passenger/phone-5.png" /></div>
+          </div>
+        </div>
+
+        <div class="has-text-centered faq">
+          <h3 class="is-size-3 title">Got questions? Go to our FAQ page to find out more about being a Rider</h3>
+          <p class="is-size-5">Know how to get RIDE Sabay credits and more rewards 
+              by going to our FAQ. <br /> <br /> </p>
+          <a class="button is-link is-large">
+            <strong>Go to FAQ</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1,000,000 Riders -->
+    <section class="regular-section early-access stripe">
+      <div class="is-fluid">
+        <div class="card">
+          <div class="columns is-vcentered">
+            <div class="column is-half">
+              <h3 class="is-size-3 title">Get FREE rides and early access.</h3>
+              <p class="is-size-5">Don’t miss our limited time offer for FREE rides. Learn how to get more benefits and rewards when you complete the form. 😎 <br /> <br /> </p>
+              <p class="is-size-6"><strong>Sign up only takes 1-minute! </strong></p>
+            </div>
+            <div class="column">
+              <div class="field">
+                <div class="field">
+                  <label class="label">Mobile number</label>
+                  <div class="control">
+                      <input class="input is-large" type="text" placeholder="09xx xxxxxxxx">
+                  </div>
+                </div>
+                <div class="columns radio-selection">
+                  <div class="column is-one-third">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        <span class="is-size-5"> &nbsp; <strong>I'm a Passenger </strong></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        <span class="is-size-5"> &nbsp; <strong>I'm a Rider </strong></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="columns">
+                  <div class="column is-6">
+                      <button class="button is-large rs-btn is-fullwidth"> 
+                        <img src="assets/passenger-icon.svg" />
+                        <p class="button-text">
+                          <small>I'm a</small> <br />
+                          <span class="is-size-5 is-new-york"> Passenger </span>
+                        </p>
+                      </button>
+                  </div>
+                  <div class="column is-6">
+                      <button class="button is-large rs-btn is-fullwidth"> 
+                        <img src="assets/rider-icon.svg" />
+                        <p class="button-text">
+                          <small>I'm a</small> <br />
+                          <span class="is-size-5 is-new-york"> Rider </span>
+                        </p>
+                      </button>
+                  </div>
+                </div> -->
+                <div class="columns is-gapless">
+                  <div class="column is-one-third">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
+                    </div>
+                  </div>
+                  <div class="column is-one-third has-text-centered">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Incentive program</strong>
+                    </div>
+                  </div>
+                  <div class="column is-one-third has-text-right">
+                    <div class="gold-checked">
+                      <img src="assets/gold-check.svg"> &nbsp; <strong>Great community</strong>
+                    </div>
+                  </div>
+                </div>
+                <button class="button is-large is-fullwidth is-link" disabled>Sign up now</button>
+                <p class="terms">By clicking the “Sign up now” button, you agree with our <a href="/">Terms and Conditions</a> and <a href="/">Privacy Policy</a>, and Google’s <a href="/">Privacy Policy</a> and <a href="/">Terms of Service</a> in line with 
+                    the reCAPTCHA protection.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <% include ../partials/footer %>
+    </footer>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
