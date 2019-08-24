@@ -2,10 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My first Bulma website</title>
-    <link rel="stylesheet" href="css/main.css">
+    <% include ../partials/head %>
   </head>
   <body>
     <% include ../partials/header %>
@@ -136,7 +133,7 @@
       <h2 class="is-size-3 title has-text-centered">We are building a new kind of Rider <br /> app 
           that will blow you away</h2>
       <div class="container is-fluid">
-        <div class="columns screenshots">
+        <div class="columns is-variable is-6 screenshots">
           <div class="column is-one-third">
             <div class="picture"><img src="assets/rider/app-1.png" /></div>
             <p class="title is-size-4 is-new-york">In app messaging — for FREE. 😎</p>

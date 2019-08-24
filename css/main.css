@@ -1,5 +1,5 @@
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
-@import url(../fonts/stylesheet.css);
+@import url(../../fonts/stylesheet.css);
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -7733,7 +7733,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "New York", "Arial", sans-serif; }
+  font-family: "SF Rounded", "Arial", sans-serif; }
 
 a {
   color: #1560FF; }
@@ -7809,6 +7809,31 @@ section {
   background: transparent;
   padding: 24px 0 60px; }
 
+.navbar-burger {
+  position: fixed;
+  right: 8px; }
+
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    background: #FFE44E;
+    box-shadow: none;
+    height: 100vh;
+    padding: 64px 24px;
+    position: fixed;
+    width: 100%; }
+    .navbar-menu .navbar-item {
+      color: #0a0a0a;
+      font-size: 1.5rem;
+      font-weight: 700; }
+    .navbar-menu .buttons {
+      padding: 0; } }
+
+.sign-up-mobile {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .sign-up-mobile {
+      display: inherit; } }
+
 .container.is-fluid {
   max-width: 1120px;
   margin: 0 auto; }
@@ -7834,7 +7859,7 @@ section {
     border: none; }
 
 .is-new-york {
-  font-family: "New York", "Arial", sans-serif; }
+  font-family: "SF Rounded", "Arial", sans-serif; }
 
 .card-spacing {
   margin: 48px auto; }
@@ -7886,7 +7911,8 @@ section {
   padding: 80px 24px;
   background: #FFF6CB; }
   .regular-section.stripe {
-    background: repeating-linear-gradient(-55deg, #000, #000 30px, #FFE44E 30px, #FFE44E 60px); }
+    background: repeating-linear-gradient(-55deg, #000, #000 30px, #FFE44E 30px, #FFE44E 60px);
+    background: #181818; }
   @media screen and (max-width: tablet-1px) {
     .regular-section.is-centered {
       text-align: center !important; } }
@@ -7901,8 +7927,15 @@ section {
     .stripe {
       padding: 24px !important; } }
   .stripe .card {
+    background: #181818;
     padding: 64px 32px;
     box-shadow: none; }
+  .stripe .title {
+    color: #fff; }
+  .stripe p, .stripe strong {
+    color: #fff; }
+  .stripe .label {
+    color: #fff; }
 
 .yellowed {
   background: #FFE44E; }
@@ -7926,18 +7959,9 @@ section {
     max-width: 96px;
     padding-bottom: 24px; }
 
-.why-become-a-rider {
-  background-image: url(../assets/waves-pattern.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 640px; }
-
 .what-were-building {
-  padding: 120px 0;
-  background-image: url(../assets/3-waves-pattern.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
+  padding-top: 120px;
+  padding-bottom: 120px; }
   .what-were-building > .title {
     max-width: 800px;
     margin: 0 auto;

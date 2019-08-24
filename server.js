@@ -1,7 +1,15 @@
 var express = require('express');
+var sass = require('node-sass-middleware');
 var path = require('path');
 var app = express();
-const router = express.Router();
+
+ app.use(
+     sass({
+         src: __dirname + '/_sass/',    // Input SASS files
+         dest: __dirname, // Output CSS
+         debug: true                
+     })
+ );
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
