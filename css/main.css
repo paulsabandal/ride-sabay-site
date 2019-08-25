@@ -7758,6 +7758,9 @@ footer {
 .navbar-item .buttons {
   padding-left: 56px; }
 
+.title {
+  color: #000000; }
+
 .content h1:not(:first-child) {
   margin-top: .5em; }
 
@@ -7788,9 +7791,17 @@ section {
     padding: 8px;
     height: 48px; }
 
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: #000000; }
+
 .button {
   font-size: 16px;
-  box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
+  box-shadow: 0px 1px 2px #6A6A6A, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
   height: 56px;
   padding-right: 1.25em;
   padding-left: 1.25em; }
@@ -7804,10 +7815,14 @@ section {
   .button.is-large {
     font-size: 18px;
     height: 60px; }
+  .button.is-block {
+    margin: 16px auto;
+    max-width: 380px;
+    line-height: 48px; }
 
 .navbar {
   background: transparent;
-  padding: 24px 0 60px; }
+  padding: 24px 0 48px; }
 
 .navbar-burger {
   position: fixed;
@@ -7822,7 +7837,7 @@ section {
     position: fixed;
     width: 100%; }
     .navbar-menu .navbar-item {
-      color: #0a0a0a;
+      color: #000000;
       font-size: 1.5rem;
       font-weight: 700; }
     .navbar-menu .buttons {
@@ -7906,6 +7921,11 @@ section {
 
 .hero {
   padding: 40px 24px 160px; }
+  .hero .title {
+    font-size: 4rem !important; }
+  .hero .button {
+    margin-top: 24px;
+    margin-bottom: 24px; }
 
 .regular-section {
   padding: 80px 24px;
@@ -7922,7 +7942,7 @@ section {
   padding-right: 24px; }
 
 .stripe {
-  padding: 64px; }
+  padding: 0px; }
   @media screen and (max-width: 768px) {
     .stripe {
       padding: 24px !important; } }
@@ -7944,7 +7964,6 @@ section {
   background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
 
 .ph-badge {
-  padding-left: 16px;
   height: 62px; }
   @media screen and (max-width: 768px) {
     .ph-badge {
@@ -7956,7 +7975,6 @@ section {
   padding: 48px 0; }
   .intro-items .picture img {
     width: 100%;
-    max-width: 96px;
     padding-bottom: 24px; }
 
 .what-were-building {
@@ -7968,9 +7986,11 @@ section {
     padding-bottom: 48px; }
   .what-were-building .screenshots .picture {
     padding: 24px 0;
-    max-width: 280px; }
+    max-width: 280px;
+    margin: 0 auto; }
   .what-were-building .screenshots .title {
-    padding: 24px 0; }
+    padding: 24px 0;
+    text-align: center; }
 
 .launching-timer .timer {
   padding: 0 0 32px;
@@ -7986,6 +8006,9 @@ section {
   color: #7a7a7a;
   text-transform: uppercase;
   font-weight: 700; }
+
+.launching-timer .sign-up-now {
+  color: white; }
 
 .sign-up-cta .title {
   padding: 24px 0; }
@@ -8141,7 +8164,7 @@ section {
 
 .accordion-item {
   width: 100%;
-  color: #0a0a0a;
+  color: #000000;
   overflow: hidden;
   padding: 4px; }
   .accordion-item-label {
@@ -8198,7 +8221,7 @@ section {
 
 .daily-range {
   margin-top: 32px;
-  padding: 40px 16px; }
+  padding: 40px 16px 16px; }
   .daily-range .range-title {
     font-weight: 700;
     padding-left: 16px; }
@@ -8364,17 +8387,19 @@ input[type='range'].n.n10:before {
 .tag:not(body) {
   border-radius: 16.5px;
   padding: 16px;
-  font-size: 10px;
-  font-weight: 700; }
+  font-size: 16px;
+  font-weight: 700;
+  height: 3rem; }
   .tag:not(body).is-success {
     background-color: #EDFFCE;
     border: 1px solid #3C4629;
     color: #3C4629; }
   .tag:not(body).is-danger {
-    background: #FFB1B1;
-    border: 1px solid #461E1E;
-    color: #461E1E;
-    font-size: 12px; }
+    background: #181818;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    padding: 16px;
+    border-radius: 100px; }
 
 .social-links p {
   margin-bottom: 12px; }
@@ -8401,3 +8426,18 @@ input[type='range'].n.n10:before {
 
 .welcome-and-count {
   padding: 0 80px; }
+
+.we-care-for-you {
+  padding: 80px 0; }
+  .we-care-for-you ul {
+    list-style-type: none;
+    margin-left: 0; }
+    .we-care-for-you ul img {
+      vertical-align: middle; }
+
+.table td {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0; }
+
+.table tbody tr:last-child td {
+  border-bottom-width: 1px; }
