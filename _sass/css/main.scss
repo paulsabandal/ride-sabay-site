@@ -53,7 +53,34 @@ body {
 }
 
 footer {
-    background: $yellow-gradient !important;
+    background: $yellow !important;
+    padding: 0 !important;
+    .social-links {
+      margin-top: 24px;
+
+      a.link-item {
+        margin-left: 8px;
+        padding: 12px;
+      }
+
+      a:first-child {
+        margin-left: 0;
+      }
+      
+      p {
+        margin-top: 8px;
+        font-size: 18px;
+      }
+    }
+
+    > .container {
+      padding: 3rem 1.5rem 6rem;
+    }
+}
+
+.menu-list a {
+  color: $black;
+  font-size: 20px;
 }
 
 .menu-list a:hover {
@@ -676,7 +703,7 @@ section {
     overflow: hidden;
     padding: 4px;
 
-    &-label {
+  &-label {
       display: flex;
       justify-content: space-between;
       padding: 1em;
@@ -993,4 +1020,19 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
 
 .table tbody tr:last-child td {
   border-bottom-width: 1px;
+}
+
+
+.radio-button {
+  color: $black;
+}
+
+.all-right-reserved {
+  background: $yellow-pale;
+  padding: 24px 0;
+  font-size: 16px;
+
+  img {
+    vertical-align: middle;
+  }
 }

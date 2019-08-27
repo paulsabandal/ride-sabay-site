@@ -7744,7 +7744,24 @@ body {
   background: #FFE44E; }
 
 footer {
-  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%) !important; }
+  background: #FFE44E !important;
+  padding: 0 !important; }
+  footer .social-links {
+    margin-top: 24px; }
+    footer .social-links a.link-item {
+      margin-left: 8px;
+      padding: 12px; }
+    footer .social-links a:first-child {
+      margin-left: 0; }
+    footer .social-links p {
+      margin-top: 8px;
+      font-size: 18px; }
+  footer > .container {
+    padding: 3rem 1.5rem 6rem; }
+
+.menu-list a {
+  color: #000000;
+  font-size: 20px; }
 
 .menu-list a:hover {
   background: #D1BB40; }
@@ -8441,3 +8458,13 @@ input[type='range'].n.n10:before {
 
 .table tbody tr:last-child td {
   border-bottom-width: 1px; }
+
+.radio-button {
+  color: #000000; }
+
+.all-right-reserved {
+  background: #FFF6CB;
+  padding: 24px 0;
+  font-size: 16px; }
+  .all-right-reserved img {
+    vertical-align: middle; }
