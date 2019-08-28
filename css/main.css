@@ -7817,18 +7817,22 @@ section {
   color: #000000; }
 
 .button {
+  font-family: "SF Rounded", "Arial", sans-serif;
   font-size: 16px;
   box-shadow: 0px 1px 2px #6A6A6A, inset 0px 1px 3px rgba(255, 255, 255, 0.64);
   height: 56px;
   padding-right: 1.25em;
   padding-left: 1.25em; }
   .button.is-white {
-    color: #1560FF !important; }
+    color: #1560FF !important;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%);
+    box-shadow: 0px 2px 4px #CBCBCB, inset 0px 1px 3px rgba(255, 255, 255, 0.64); }
   .button.is-small {
     font-size: 14px;
     height: 48px;
-    padding-right: 1.25em;
-    padding-left: 1.25em; }
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    border-radius: 2px; }
   .button.is-large {
     font-size: 18px;
     height: 60px; }
@@ -7897,7 +7901,7 @@ section {
   margin: 48px auto; }
 
 .auth-page {
-  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%);
+  background: #FFE44E;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -7909,7 +7913,7 @@ section {
   padding: 32px 0; }
 
 .pre-footer {
-  padding: 48px 0; }
+  padding: 32px 0; }
   .pre-footer .recaptcha {
     color: #7a7a7a;
     padding: 24px;
@@ -7923,7 +7927,7 @@ section {
   border-radius: 3px;
   border: none;
   height: 100%;
-  padding: 12px 0;
+  padding: 24px 0;
   text-align: left; }
   .button.rs-btn img {
     width: 64px;
@@ -8415,7 +8419,7 @@ input[type='range'].n.n10:before {
     background: #181818;
     border: 1px solid #FFFFFF;
     color: #fff;
-    padding: 16px;
+    padding: 16px 32px;
     border-radius: 100px; }
 
 .social-links p {
@@ -8460,7 +8464,11 @@ input[type='range'].n.n10:before {
   border-bottom-width: 1px; }
 
 .radio-button {
-  color: #000000; }
+  color: #000000;
+  font-weight: 700;
+  text-align: left; }
+  .radio-button .emoji {
+    font-size: 28px; }
 
 .all-right-reserved {
   background: #FFF6CB;
@@ -8468,3 +8476,10 @@ input[type='range'].n.n10:before {
   font-size: 16px; }
   .all-right-reserved img {
     vertical-align: middle; }
+
+.gold-checklist li {
+  padding-top: 4px;
+  padding-bottom: 4px; }
+
+.choose-account {
+  padding-top: 12px; }
