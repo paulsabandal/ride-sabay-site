@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <% include ../partials/head %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body class="auth-page">
     <% include ../partials/header-auth %>
@@ -56,19 +57,15 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="columns">
+                        <div class="columns referral-field">
                             <div class="column">
-                                <p class="label">Residence:</p>
-                                <select class="input is-large" type="text" placeholder="tonystark@avengers.com" >
-                                    <option>Option 1</option>
-                                    <option>Option 1</option>
-                                    <option>Option 1</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="column">
-                                <p class="label">Referrer:</p>
+                                <p class="label">
+                                    Referrer:
+                                    <span class="tooltip is-tooltip-multiline" data-tooltip="This is the owner of the referral link you clicked. This person will get credited with
+                                    RIDE Sabay credits once you complete signing up.">
+                                        <i class="fa fa-info-circle"></i> 
+                                    </span>
+                                </p>
                                 <input class="input is-large" type="text" placeholder="Captain Rogers" />
                             </div>
                         </div>
