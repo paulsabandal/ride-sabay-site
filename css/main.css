@@ -7773,10 +7773,19 @@ footer {
   display: block; }
 
 .navbar-item .buttons {
-  padding-left: 56px; }
+  padding-left: 0px; }
 
 .title {
   color: #000000; }
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 2rem; } }
+
+.subtitle {
+  color: #000000; }
+  @media screen and (max-width: 768px) {
+    .subtitle {
+      font-size: 1.25rem !important; } }
 
 .content h1:not(:first-child) {
   margin-top: .5em; }
@@ -7844,25 +7853,44 @@ section {
 .navbar {
   background: transparent;
   padding: 24px 0 48px; }
+  .navbar .navbar-start {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px; }
+    @media screen and (max-width: 768px) {
+      .navbar .navbar-start {
+        padding-left: 0px;
+        text-align: center; } }
 
 .navbar-burger {
-  position: fixed;
   right: 8px; }
+  .navbar-burger:hover {
+    color: #000000 !important; }
+  .navbar-burger span {
+    height: 2px; }
 
 @media screen and (max-width: 768px) {
   .navbar-menu {
     background: #FFE44E;
     box-shadow: none;
     height: 100vh;
-    padding: 64px 24px;
-    position: fixed;
-    width: 100%; }
+    padding: 32px 24px;
+    position: absolute;
+    width: 100%;
+    text-align: center; }
     .navbar-menu .navbar-item {
       color: #000000;
-      font-size: 1.5rem;
-      font-weight: 700; }
+      font-size: 1.5rem; }
     .navbar-menu .buttons {
-      padding: 0; } }
+      padding: 0;
+      margin-top: 24px; } }
+    @media screen and (max-width: 768px) and (max-width: 768px) {
+      .navbar-menu .buttons .button {
+        width: 100%;
+        max-width: 320px;
+        font-size: 1rem;
+        margin: 0 auto 16px !important; } }
 
 .sign-up-mobile {
   display: none; }
@@ -7944,6 +7972,9 @@ section {
   padding: 40px 24px 160px; }
   .hero .title {
     font-size: 4rem !important; }
+    @media screen and (max-width: 768px) {
+      .hero .title {
+        font-size: 2rem !important; } }
   .hero .button {
     margin-top: 24px;
     margin-bottom: 24px; }
@@ -8115,7 +8146,7 @@ section {
   max-height: 128px; }
 
 .step-box {
-  background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%);
+  background: #FFE44E;
   margin: 48px 12px;
   padding: 40px 32px; }
   .step-box .count {
@@ -8126,7 +8157,9 @@ section {
     text-align: center;
     padding: 4px;
     font-weight: 700;
-    margin: 0 0 16px; }
+    margin: 0 auto 24px; }
+  .step-box .subtitle {
+    padding-top: 8px; }
 
 .referral-counts {
   padding-top: 48px; }
@@ -8147,7 +8180,7 @@ section {
   .unlock-card.locked .card-title {
     background: #F8FFEB; }
   .unlock-card.locked .content {
-    background: linear-gradient(180deg, #FFF386 0%, #FFE44E 100%); }
+    background: #FFE44E; }
   .unlock-card .card-title {
     margin: 4px auto;
     margin-bottom: -8px;
@@ -8155,13 +8188,16 @@ section {
     z-index: 1;
     padding: 8px 0;
     width: 80%;
+    max-width: 240px;
     background: #EFEFEF; }
   .unlock-card .content {
     background: #F8F8F8;
     padding: 24px 16px;
     border-radius: 4px;
     line-height: 2.5;
-    height: 176px; }
+    height: 176px;
+    max-width: 300px;
+    margin: 0 auto; }
     .unlock-card .content img {
       vertical-align: middle; }
 
@@ -8491,3 +8527,17 @@ input[type='range'].n.n10:before {
 
 .choose-account {
   padding-top: 12px; }
+
+.brand-element {
+  max-width: 320px; }
+
+.social-links {
+  margin-top: 24px; }
+  .social-links a.link-item {
+    margin-left: 8px;
+    padding: 12px; }
+  .social-links a:first-child {
+    margin-left: 0; }
+  .social-links p {
+    margin-top: 8px;
+    font-size: 18px; }

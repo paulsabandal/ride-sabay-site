@@ -103,12 +103,22 @@ footer {
   }
 
   .buttons {
-    padding-left: 56px;
+    padding-left: 0px;
   }
 }
 
 .title {
   color: $black;
+  @include until($tablet){
+    font-size: 2rem;
+  }
+}
+
+.subtitle {
+  color: $black;
+  @include until($tablet){
+    font-size: 1.25rem !important;
+  }
 }
 
 .content h1:not(:first-child) {
@@ -194,11 +204,28 @@ section {
 .navbar {
     background: transparent;
     padding: 24px 0 48px;
+
+    .navbar-start {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-left: 80px;
+      @include until($tablet) {
+        padding-left: 0px;
+        text-align: center;
+      }
+    }
 }
 
 .navbar-burger {
-  position: fixed;
   right: 8px;
+  &:hover {
+    color: $black !important;
+  }
+
+  span {
+    height: 2px;
+  }
 }
 
 .navbar-menu {
@@ -206,17 +233,27 @@ section {
     background: $yellow;
     box-shadow: none;
     height: 100vh;
-    padding: 64px 24px;
-    position: fixed;
+    padding: 32px 24px;
+    position: absolute;
     width: 100%;
+    text-align: center;
     .navbar-item {
       color: $black;
       font-size: 1.5rem;
-      font-weight: 700;
     }
 
     .buttons {
       padding: 0;
+      margin-top: 24px;
+
+      @include until($tablet) {
+        .button {
+          width: 100%;
+          max-width: 320px;
+          font-size: 1rem;
+          margin: 0 auto 16px !important;
+        }
+      }
     }
   }
 }
@@ -334,6 +371,9 @@ section {
     padding: 40px 24px 160px;
     .title {
       font-size: 4rem !important;
+      @include until($tablet){
+        font-size: 2rem !important;
+      }
     }
     
     .button {
@@ -341,6 +381,8 @@ section {
       margin-bottom: 24px;
     }
 }
+
+
 
 .regular-section {
     padding: 80px 24px;
@@ -598,7 +640,7 @@ section {
 }
 
 .step-box {
-    background: $yellow-gradient;
+    background: $yellow;
     margin: 48px 12px;
     padding: 40px 32px;
 
@@ -610,7 +652,11 @@ section {
         text-align: center;
         padding: 4px;
         font-weight: 700;
-        margin: 0 0 16px;
+        margin: 0 auto 24px;
+    }
+
+    .subtitle {
+      padding-top: 8px;
     }
 }
 
@@ -646,7 +692,7 @@ section {
             background: #F8FFEB;
         }
         .content {
-            background: $yellow-gradient;
+            background: $yellow;
         }
     }
 
@@ -657,6 +703,7 @@ section {
         z-index: 1;
         padding: 8px 0;
         width: 80%;
+        max-width: 240px;
         background: #EFEFEF;
     }
 
@@ -666,6 +713,8 @@ section {
         border-radius: 4px;
         line-height: 2.5;
         height: 176px;
+        max-width: 300px;
+        margin: 0 auto;
 
         img {
             vertical-align: middle;
@@ -1066,4 +1115,26 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
 
 .choose-account {
   padding-top: 12px;
+}
+
+.brand-element {
+  max-width: 320px;
+}
+
+.social-links {
+  margin-top: 24px;
+
+  a.link-item {
+    margin-left: 8px;
+    padding: 12px;
+  }
+
+  a:first-child {
+    margin-left: 0;
+  }
+  
+  p {
+    margin-top: 8px;
+    font-size: 18px;
+  }
 }
