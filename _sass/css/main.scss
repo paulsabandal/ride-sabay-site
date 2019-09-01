@@ -55,6 +55,19 @@ body {
 footer {
     background: $yellow !important;
     padding: 0 !important;
+
+    .logo-footer {
+      @include until($tablet) {
+        width: 120px;
+      }
+    }
+
+    .columns.is-gapless  > .column {
+      @include until($tablet) {
+        padding-bottom: 24px !important;
+      }
+    }
+
     .social-links {
       margin-top: 24px;
 
@@ -75,12 +88,18 @@ footer {
 
     > .container {
       padding: 3rem 1.5rem 6rem;
+      @include until($tablet) {
+        padding-bottom: 16px;
+      }
     }
 }
 
 .menu-list a {
   color: $black;
   font-size: 20px;
+  @include until($tablet) {
+    padding-left: 0;
+  }
 }
 
 .menu-list a:hover {
@@ -118,6 +137,10 @@ footer {
   color: $black;
   @include until($tablet){
     font-size: 1.25rem !important;
+  }
+
+  &.is-size-6 {
+    font-size: 1rem !important;
   }
 }
 
@@ -340,7 +363,7 @@ section {
 // Custom Buttons
 .button.rs-btn {
     background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
-    box-shadow: 0px 2px 4px #CBCBCB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 1px 3px rgba(255, 255, 255, 0.64);
     border-radius: 3px;
     border: none;
     height: 100%;
@@ -372,13 +395,19 @@ section {
     .title {
       font-size: 4rem !important;
       @include until($tablet){
-        font-size: 2rem !important;
+        font-size: 2.25rem !important;
       }
     }
     
     .button {
       margin-top: 24px;
       margin-bottom: 24px;
+
+      @include until($tablet) {
+        display: inline-block !important;
+        margin-top: 0;
+        width: 100%;
+      }
     }
 }
 
@@ -388,14 +417,21 @@ section {
     padding: 80px 24px;
     background: $yellow-pale;
 
-    &.stripe {
-        background: repeating-linear-gradient( -55deg, #000, #000 30px, $yellow 30px, $yellow 60px );
-        background: #181818;
+    &.is-centered {
+      @include until($tablet) {
+        text-align: center !important;
+      }
+    }
+    
+    > .title {
+      @include until($tablet) {
+        font-size: 2rem !important;
+      }
     }
 
-    &.is-centered {
-      @include until(tablet) {
-        text-align: center !important;
+    .button.is-block {
+      @include until($tablet) {
+        display: inline-block !important;
       }
     }
 }
@@ -407,13 +443,39 @@ section {
 
 .stripe {
     padding: 0px;
+    background: repeating-linear-gradient( -55deg, #000, #000 30px, $yellow 30px, $yellow 60px );
+    background: #181818;
+
     @include until($tablet) {
-      padding: 24px !important;
+      padding: 0px !important;
     }
+
+    .button.is-block {
+      @include until($tablet) {
+        display: block !important;
+      }
+    }
+
+    .title {
+      @include until($tablet) {
+        font-size: 1.75rem !important;
+      }
+    }
+
+    .is-size-4   {
+      @include until($tablet) {
+        font-size: 1.25rem !important;
+      }
+    }
+
     .card {
         background: #181818;
         padding: 64px 32px;
         box-shadow: none;
+
+        @include until($tablet) {
+          padding: 64px 16px;
+        }
     }
 
     .title {
@@ -440,7 +502,6 @@ section {
 .ph-badge {
   height: 62px;
   @include until($tablet) {
-    float: left;
     padding-left: 0;
     padding-bottom: 16px;
   }
@@ -480,6 +541,10 @@ section {
             padding: 24px 0;
             max-width: 280px;
             margin: 0 auto;
+
+            @include until($tablet) {
+              max-width: 200px;
+            }
         }
         .title {
             padding: 24px 0;
@@ -496,6 +561,9 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+        @include until($tablet) {
+          font-size: 14px !important;
+        }
         li {
           padding: 16px;
         }
@@ -505,6 +573,10 @@ section {
         color: $grey;
         text-transform: uppercase;
         font-weight: 700;
+
+        @include until($tablet) {
+          font-size: 12px !important;
+        }
     }
 
     .sign-up-now {
@@ -527,6 +599,16 @@ section {
 }
 
 .early-access {
+    @include until($tablet) {
+      .has-text-centered {
+        text-align: left !important;
+      }
+    }
+
+    .label {
+      font-size: 16px !important;
+    }
+
     .terms {
         color: $grey;
         padding: 24px 0;
@@ -631,12 +713,15 @@ section {
 
 .count-box {
     background: $white;
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 700;
     height: 100%;
     width: 100%;
     padding: 24px;
     max-height: 128px;
+    display: flex;
+    align-items: center;
+    color: $black;
 }
 
 .step-box {
@@ -882,6 +967,9 @@ $w: 100%;
 .range {
   width: 88%;
   margin: 0 auto;
+  @include until($tablet) {
+    width: 92%;
+  }
 }
 
 .range-price {
@@ -1016,6 +1104,13 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
   font-size: 16px;
   font-weight: 700;
   height: 3rem;
+
+  @include until($tablet) {
+    font-size: 12px;
+    padding: 8px 16px !important;
+    height: 2rem;
+  }
+
   &.is-success {
     background-color: #EDFFCE;
     border: 1px solid #3C4629;
@@ -1068,12 +1163,38 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
 
 .we-care-for-you {
   padding: 80px 0;
+
+  @include until($tablet) {
+    text-align: center !important;
+  }
   
   ul {
     list-style-type: none;
     margin-left: 0;
     img {
       vertical-align: middle;
+    }
+  }
+
+  .daily-range {
+    @include until($tablet) {
+      padding: 40px 8px;
+      margin-top: 0px;
+
+      .range-title {
+        font-size: 16px !important;
+        text-align: left;
+        padding-left: 8px;
+      }
+
+      .range-results {
+        padding: 8px;
+      }
+
+      p {
+        text-align: left;
+        font-size: 12px;
+      }
     }
   }
 }
@@ -1095,6 +1216,14 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
   text-align: left;
   .emoji {
     font-size: 28px;
+    @include until($tablet) {
+      font-size: 18px;
+    }
+  }
+
+  @include until($tablet) {
+    font-size: 12px !important;
+    padding: 16px !important;
   }
 }
 
@@ -1102,6 +1231,13 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
   background: $yellow-pale;
   padding: 24px 0;
   font-size: 16px;
+
+  @include until($tablet) {
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    padding-left: 24px;
+  }
 
   img {
     vertical-align: middle;
@@ -1112,6 +1248,14 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
+.gold-checklist.is-mobile {
+  font-size: 14px;
+  img {
+    vertical-align: middle;
+  }
+}
+
 
 .choose-account {
   padding-top: 12px;
@@ -1136,5 +1280,25 @@ input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, inp
   p {
     margin-top: 8px;
     font-size: 18px;
+  }
+}
+
+.copy-link {
+  padding: 28px 16px;
+  font-size: 16px !important;
+  color: #999;
+}
+
+.copy-link-social {
+  margin-top: 16px
+}
+
+.gold-check-under-form {
+  @include until($tablet) {
+    font-size: 11px;
+
+    .has-text-right {
+      text-align: left !important;
+    }
   }
 }

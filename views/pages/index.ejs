@@ -17,7 +17,7 @@
                 Move through traffic. Do more of what you love.
               </h1>
               <p class="subtitle is-size-3">
-                  <strong>RIDE Sabay</strong> is the newest motorcycle ride-hailing app in town. We make moving easy. 😎
+                  RIDE Sabay is the newest motorcycle ride-hailing app in town. We make moving easy. 😎
               </p>
               <div>
               <img src="assets/product-hunt.svg" class="ph-badge" /> <br />
@@ -32,7 +32,7 @@
     </section>
 
     <!-- Why become a rider -->
-    <section id="passengers" class="why-become-a-rider regular-section patterned is-centered">
+    <section class="why-become-a-rider regular-section patterned is-centered">
       <h2 class="is-size-2 title has-text-centered">Passenger features</h2>
       <div class="container is-fluid has-text-centered">
         <div class="columns is-variable is-6 intro-items">
@@ -44,7 +44,10 @@
           <div class="column is-one-third">
             <div class="picture"><img src="assets/passenger/features/2.png" /></div>
             <p class="title is-size-5">Book For Later™️. <br /> A sure ride for you. 😎</p>
-            <p class="subtitle is-size-6">We added an new booking feature to <br /> help you prepare for the future.</p>
+            <p class="subtitle is-size-6">We added an new booking feature to <br /> help you prepare for the future.</p> 
+            <a href="/registration" class="button is-large is-block is-link">
+              <strong>Sign up now</strong>
+            </a> 
           </div>
           <div class="column is-one-third">
             <div class="picture"><img src="assets/passenger/features/3.png" /></div>
@@ -53,9 +56,6 @@
                 the app for FREE!</p>
           </div>
         </div>
-        <a class="button is-large is-block is-link">
-          <strong>Sign up now</strong>
-        </a>
       </div>
     </section>
 
@@ -63,7 +63,7 @@
     <section class="regular-section stripe">
       <div class="is-fluid">
         <div class="card has-text-centered">
-          <h3 class="is-size-3 title">1,000,000 + Riders trust motorcycle ride-sharing apps <br /> to help them achieve their dreams</h3>
+          <h3 class="is-size-3 title">10,000,000 + people trust motorcycle ride-hailing apps to help them get to their destination — fast!</h3>
           <p class="is-size-4">Sign up now for FREE to be part of our exclusive early launch. <br /> <br /> </p>
           <a class="button is-link is-large is-block">
             <strong>Sign up now</strong>
@@ -98,8 +98,14 @@
       <div class="is-fluid">
         <div class="card has-text-centered">
           <h3 class="is-size-3 title">RIDE Sabay will be launching in</h3>
+          <div class="is-hidden-desktop">
+              <br />
+              <p id="days-m" class="title is-size-1">0</p>
+              <p class="subtitle is-size-6">days</p>
+          </div>
+
           <ul class="timer">
-            <li>
+            <li class="is-hidden-mobile">
                 <p id="days" class="title is-size-1">0</p>
                 <p class="subtitle is-size-6">days</p>
             </li>
@@ -107,7 +113,7 @@
                 <p id="hours" class="title is-size-1">0</p>
                 <p class="subtitle is-size-6">hours</p>
             </li>
-            <li>
+            <li class="is-hidden-mobile">
                 <p class="is-size-1">:</p>
                 <p class="subtitle is-size-6">&nbsp;</p>
             </li>
@@ -115,7 +121,7 @@
                 <p id="minutes" class="title is-size-1">0</p>
                 <p class="subtitle is-size-6">minutes</p>
             </li>
-            <li>
+            <li class="is-hidden-mobile">
                 <p class="is-size-1">:</p>
                 <p class="subtitle is-size-6">&nbsp;</p>
             </li>
@@ -161,7 +167,7 @@
   
 
     <!-- Why become a rider -->
-    <section id="riders" class="why-become-a-rider regular-section patterned is-centered">
+    <section class="why-become-a-rider regular-section patterned is-centered">
       <h2 class="is-size-2 title has-text-centered">Rider features</h2>
       <div class="container is-fluid has-text-centered">
         <div class="columns is-variable is-6 intro-items">
@@ -174,6 +180,9 @@
             <div class="picture"><img src="assets/rider/features/2.png" /></div>
             <p class="title is-size-5">An incentive program for our <br /> best Riders. 😎</p>
             <p class="subtitle is-size-6">We created a great incentive program <br /> to give back to our best Riders.</p>
+            <a href="/registration" class="button is-large is-block is-link">
+              <strong>Sign up now</strong>
+            </a> 
           </div>
           <div class="column is-one-third">
             <div class="picture"><img src="assets/rider/features/3.png" /></div>
@@ -181,20 +190,18 @@
             <p class="subtitle is-size-6">We have road side assitance to help <br /> you in case you get into an accident.</p>
           </div>
         </div>  
-        <a class="button is-large is-block is-link">
-          <strong>Sign up now</strong>
-        </a>
         <div class="columns is-centered has-text-left is-vcentered we-care-for-you">
           <div class="column is-4">
             <div class="content">
               <h3 class="is-size-3">We care for you.</h3>
               <p>We have created a rewarding incentive program to give back to our loyal riders. </p>
               <p>Sign up before we launch to get more benefits and rewards!</p>
-              <ul class="gold-checklist">
+              <ul class="gold-checklist is-hidden-mobile">
                 <li><img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong></li>
                 <li><img src="assets/gold-check.svg"> &nbsp; <strong>High income</strong></li>
                 <li><img src="assets/gold-check.svg"> &nbsp; <strong>Rider support</strong></li>
                 <li><img src="assets/gold-check.svg"> &nbsp; <strong>Friendly community</strong></li>
+              </ul>
             </div>
           </div>
           <div class="column is-7">
@@ -249,6 +256,23 @@
                 </div>
               </div>
             </div>
+            <br />
+            <div class="has-text-left gold-checklist columns is-mobile is-hidden-desktop">
+              <div class="column is-5">
+                <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
+              </div>
+              <div class="column">
+                <img src="assets/gold-check.svg"> &nbsp; <strong>High income</strong>
+              </div>
+            </div>
+            <div class="has-text-left gold-checklist columns is-mobile is-hidden-desktop">
+              <div class="column is-5 ">
+                <img src="assets/gold-check.svg"> &nbsp; <strong>Rider support</strong>
+              </div>
+              <div class="column">
+                <img src="assets/gold-check.svg"> &nbsp; <strong>Friendly community</strong>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -289,7 +313,7 @@
           <div class="columns has-text-centered">
             <div class="column">
               <h3 class="is-size-3 title">Get early access freebies, incentives, and benefits.</h3>
-              <p class="is-size-4">Sign up now and don’t get left behind. Enjoy the incentives as soon as we launch. 😎 <br /> <br /> </p>
+              <p class="is-size-4">Sign up now and don’t get left behind. Enjoy the incentives as soon as we launch.😎<br /> <br /> </p>
             </div>
           </div>
           <div class="columns has-text-centered is-centered">
@@ -301,7 +325,7 @@
                       <input class="input is-large" type="text" placeholder="09xx xxxx xxxx">
                   </div>
                 </div>
-                <div class="columns">
+                <div class="columns is-mobile">
                   <div class="column is-6">
                       <button class="radio-button button is-large rs-btn is-fullwidth"> 
                         <span class="emoji">🤗</span> &nbsp; &nbsp; I'm a Passenger
@@ -315,8 +339,8 @@
                 </div>
                 <button class="button is-large is-fullwidth is-link">Sign up now</button>
                 <br />
-                <div class="columns has-text-left is-gapless">
-                  <div class="column is-one-third">
+                <div class="columns gold-check-under-form is-mobile has-text-left is-gapless">
+                  <div class="column">
                     <div class="gold-checked">
                       <img src="assets/gold-check.svg"> &nbsp; <strong>Early access</strong>
                     </div>
